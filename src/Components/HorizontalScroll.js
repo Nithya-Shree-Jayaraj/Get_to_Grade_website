@@ -28,29 +28,32 @@ const HorizontalScroll = () => {
   useEffect(() => {
     const slideInterval = setInterval(() => {
       setCurrentIndex((prevIndex) =>
-        prevIndex === slides.length - 1 ?  0 : prevIndex + 1
+        prevIndex === slides.length - 1 ? 0 : prevIndex + 1
       );
-    }, 2000); // 2 second interval
+    }, 3000); // 2 second interval
 
-    return () => clearInterval(slideInterval); 
+    return () => clearInterval(slideInterval);
   }, [slides.length]);
 
   return (
-    <div className="w-full  h-full mt-2 px-4 lg:px-24 font-semibold border-slate-300 overflow-hidden">
-      {/* Slides container */}
-      <div
-        className="flex transition-transform duration-100"
-        style={{ transform: `translateX(-${currentIndex * 2 }%)` }} // Move slides horizontally
-      >
-        {slides.map((slide) => (
-          <div key={slide.id} className="w-56 flex-shrink-0">
-            <div className="flex justify-center items-center h-14 w-full bg-gray-100 border border-slate-100 rounded-lg">
-              {slide.content}
+    <div className="w-80% h-full mt-2 ">
+      <div className="w-full  h-full mt-2 px-4 lg:px-24 font-semibold border-slate-300 overflow-hidden">
+        {/* Slides container */}
+        <div
+          className="flex transition-transform duration-100"
+          style={{ transform: `translateX(-${currentIndex * 2}%)` }} // Move slides horizontally
+        >
+          {slides.map((slide) => (
+            <div key={slide.id} className="w-56 flex-shrink-0">
+              <div className="flex justify-center items-center h-14 w-full bg-gray-100 border border-slate-100 rounded-lg">
+                {slide.content}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
+
   );
 };
 
