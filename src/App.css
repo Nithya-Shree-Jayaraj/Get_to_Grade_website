@@ -160,8 +160,64 @@ body {
     height: 300px;
   }
 
+  .slide-image {
+    width: 70% ;
+  }
+
   .swiper-slide {
     width: 90%; /* Adjust the width on mobile */
+  }
+
+  .fire-image {
+    width: 40px;
+    left: -40px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-container {
+    height: 250px;
+  }
+
+  .fire-image {
+    width: 30px;
+    left: -30px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+     
+
+
+/* Adjust the slider container based on viewport sizes */
+@media (max-width: 1024px) {
+  .swiper-slide {
+    width: 80%; /* Adjust width on tablets */
+  }
+
+  .fire-image {
+    width: 50px;
+    left: -60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    height: 300px;
+  }
+
+  .slide-image {
+    width: 70%;
+  }
+
+  .swiper-slide {
+    width: 90%; /* Adjust width on tablets */
   }
 
   .fire-image {

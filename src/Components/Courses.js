@@ -13,7 +13,6 @@ import img5 from '../Assets/img5.svg';
 import img6 from '../Assets/img6.svg';
 import img7 from '../Assets/img7.svg';
 import img8 from '../Assets/img8.svg';
-
 import img9 from '../Assets/img9.svg';
 import fire from '../Assets/fire.png';
 import background_img from '../Assets/background_img.svg';
@@ -39,12 +38,25 @@ function Courses() {
         {/* Swiper Slider */}
         <Swiper
           spaceBetween={30}  // Gap between images
-          slidesPerView={3}  // Show 3 slides at a time
           centeredSlides={true}
           pagination={{ clickable: true }}
           loop={true}
           autoplay={{ delay: 2000 }}  // Move every 2 seconds
           modules={[Pagination, Autoplay]}  // Register modules
+          breakpoints={{
+            // Desktop view: 3 slides per view
+            1024: {
+              slidesPerView: 3,
+            },
+            // Tablet view: 2 slides per view
+            768: {
+              slidesPerView: 2,
+            },
+            // Mobile view: 1 slide per view
+            480: {
+              slidesPerView: 1,
+            },
+          }}
           className="swiper-container"
         >
           {images.map((image, index) => (
