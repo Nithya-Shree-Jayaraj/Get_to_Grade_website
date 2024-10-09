@@ -244,3 +244,16 @@ body {
     font-size: 2rem;
   }
 }
+
+/* Hide scrollbar */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, and Opera */
+}
+
+/* transition-transform duration-1000 // For 1-second smooth transition */
+

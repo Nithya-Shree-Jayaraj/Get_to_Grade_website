@@ -1,86 +1,16 @@
-import categorie from '../Assets/categorie-icon.jpg';
-import categorie2 from '../Assets/categorie-icon (1).jpg';
-import wordImage from '../Assets/wimg.jpg';
-import Gimg from '../Assets/Gimg.jpg';
+import wordImage from '../Assets/word.png';
+import Gimg from '../Assets/Girl_img.png';
 import DownArrow from '../Assets/DownArrow.png'
 import UpArrow from '../Assets/UpArrow.png';
 import plant from '../Assets/plant.png';
 import Enroll from '../Assets/Enrow_now.png';
-import ytube from '../Assets/Ytube.jpg';
+import ytube from '../Assets/utube_icon.png';
+import HorizontalScroll from './HorizontalScroll';
 
 
 export default function Hero() {
       return <section>
-            {/* <div class="flex w-full h-full items-center mt-2 px-24 font-semibold  border-slate-300">
-      <div class="space-x-3 flex flex-1 text-sm">
-
-          <div class="mx-4 w-14 h-14 rounded-lg flex items-center justify-center space-x-3">
-              <img src={categorie} alt='' />
-          </div>
-        
-          <div class="w-56  h-14 rounded-lg flex items-center justify-center border border-slate-100 bg-gray-100 text-slate-950" > 
-          <button>Front-end Development</button>
-          </div>
-     
-          <div class="w-64 h-14 rounded-lg flex items-center justify-center border border-slate-100  bg-gray-100 text-slate-950 ">
-                <button>Back-end Development</button>
-          </div>
-    
-          <div class="w-40 h-14 rounded-lg flex items-center justify-center border border-slate-100  bg-gray-100 text-slate-950 ">
-                <button>Full-Stack Development</button>
-          </div>
-       
-          <div class="w-44 h-14 rounded-lg flex items-center justify-center">
-                <img src={categorie2} alt='' />
-          </div>
-
-          <div class="w-20 h-14 rounded-lg flex items-center justify-center border border-slate-100  bg-gray-100 text-slate-950">
-                <button>Ui & Ux</button>
-          </div>
-
-          <div class="w-48 h-14 rounded-lg flex items-center justify-center border border-slate-100  bg-gray-100 text-slate-950">
-                <button>Graphic Designing</button>
-          </div>
-      </div>
-//     </div> */}
-
-            <div class="w-full h-full mt-2 px-4 lg:px-24 font-semibold border-slate-300">
-                  {/* /* <!-- Scrollable div --> */} 
-                  <div class="flex space-x-3 overflow-x-auto">
-
-                        <div class="w-14 h-14 flex-shrink-0 rounded-lg flex items-center justify-center space-x-3">
-                              <img src={categorie} alt='' />
-                        </div>
-
-                        <div class="w-56 h-14 flex-shrink-0 rounded-lg flex items-center justify-center border border-slate-100 bg-gray-100 text-slate-950">
-                              <button>Front-end Development</button>
-                        </div>
-
-                        <div class="w-64 h-14 flex-shrink-0 rounded-lg flex items-center justify-center border border-slate-100 bg-gray-100 text-slate-950">
-                              <button>Back-end Development</button>
-                        </div>
-
-                        <div class="w-40 h-14 flex-shrink-0 rounded-lg flex items-center justify-center border border-slate-100 bg-gray-100 text-slate-950">
-                              <button>Full-Stack Development</button>
-                        </div>
-
-                        <div class="w-44 h-14 flex-shrink-0 rounded-lg flex items-center justify-center">
-                              <img src={categorie2} alt='' />
-                        </div>
-
-                        <div class="w-20 h-14 flex-shrink-0 rounded-lg flex items-center justify-center border border-slate-100 bg-gray-100 text-slate-950">
-                              <button>Ui & Ux</button>
-                        </div>
-
-                        <div class="w-48 h-14 flex-shrink-0 rounded-lg flex items-center justify-center border border-slate-100 bg-gray-100 text-slate-950">
-                              <button>Graphic Designing</button>
-                        </div>
-
-                  </div>
-            </div>
-
-
-
+            <div>    <HorizontalScroll />    </div>
             <div className='mx-24 max-w-full  flex relative'>
                   <div className='w-1/2 mt-24 relative ' >
                         <img src={wordImage} alt='' />
@@ -95,7 +25,7 @@ export default function Hero() {
 
 
                   <div className='w-1/2  flex relative ' >
-                        <div className='max-w-full absolute top-0 left-20  h-auto object-cover z-0'>
+                        <div className='w-full absolute top-0 left-20  h-auto object-cover z-0'>
                               <img src={Gimg} alt='' />
                         </div>
 
