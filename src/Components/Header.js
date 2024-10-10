@@ -17,7 +17,7 @@ export default function Header() {
             {/* Toggle button for mobile view */}
             <div className='block md:hidden'>
                <button onClick={() => setMenuOpen(!menuOpen)} className='text-2xl'>
-                  &#9776; {/* Hamburger icon */}
+                  {menuOpen ? '✖' : '☰'} {/* Cross icon when menu is open */}
                </button>
             </div>
 
@@ -47,27 +47,26 @@ export default function Header() {
          </header>
 
          {/* Mobile Menu */}
-         <div className={`md:hidden ${menuOpen ? 'block' : 'hidden'} bg-white w-full p-6`}>
-            <ul className='flex flex-col space-y-4 font-bold'>
-               <li><a className='text-yellow-400 border-b-4 border-yellow-400' href="#">Home</a></li>
-               <li><a href="#">About us</a></li>
-               <li className="relative">
-                  <span>Course</span>
-                  <span className="absolute top-0 right-0 -mt-5 -mr-1 text-xs font-bold px-1 py-0 rounded-full">
-                     <img src={Vector} alt="notification" />
-                  </span>
-               </li>
-               <li><a href="#">Mentor's</a></li>
-               <li><a href="#">Contact</a></li>
-               <li><a href="#">FAQ's</a></li>
-            </ul>
-            <div className='flex flex-col space-y-4 mt-6'>
-               <a className='font-semibold border-b border-black text-base' href="#">Upload Your Resume</a>
-               <button className='text-white bg-blue-900 rounded-md px-4 py-1 font-bold'>Enroll Now</button>
+         <div className={`md:hidden fixed top-0 left-0 w-full h-full bg-white z-30 transition-transform transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'} ease-in-out duration-300`}>
+            <div className='p-6'>
+               <button onClick={() => setMenuOpen(false)} className='text-2xl'>
+                  ✖ {/* Cross icon to close the menu */}
+               </button>
+               <ul className='flex flex-col space-y-4 font-bold mt-6'>
+                  <li><a className='text-yellow-400 border-b-4 border-yellow-400' href="#">Home</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li className="relative">
+                     <span>Course</span>
+                     <span className="absolute top-0 right-0 -mt-5 -mr-1 text-xs font-bold px-1 py-0 rounded-full">
+                        <img src={Vector} alt="notification" />
+                     </span>
+                  </li>
+                  <li><a href="#">Mentor's</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">FAQ's</a></li>
+               </ul>
             </div>
          </div>
-
-
       </>
    );
 }

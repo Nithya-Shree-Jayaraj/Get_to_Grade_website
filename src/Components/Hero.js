@@ -22,8 +22,8 @@ export default function Hero() {
                               <div className="relative w-full h-auto z-0">
                                     <img className="w-full object-cover" src={Gimg} alt="" />
                                     {/* DownArrow and plant images */}
-                                    <img className="absolute top-8 left-0 h-auto object-cover z-10 hidden lg:block" src={DownArrow} alt="" />
-                                    <img className="absolute bottom-12 left-0 h-auto object-cover z-10" src={plant} alt="" />
+                                    <img className="absolute top-60 left-10 h-auto object-cover z-10 hidden lg:block" src={DownArrow} alt="" />
+                                    <img className="absolute bottom-20 left-80 h-auto object-cover z-10 hidden lg:block" src={plant} alt="" />
                                     {/* UpArrow image, hidden on mobile */}
                                     <img className="absolute bottom-7 right-1/3 h-auto object-cover z-10 hidden lg:block" src={UpArrow} alt="" />
                               </div>
