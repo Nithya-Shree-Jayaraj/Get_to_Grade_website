@@ -80,4 +80,5 @@ const HorizontalScroll = () => {
   );
 };
 
-export default HorizontalScroll;
+export default HorizontalScroll
+ 
