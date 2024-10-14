@@ -48,68 +48,39 @@ body {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  height: 600px;  /* Adjusted height */
+  height: 900px;  /* Adjusted height */
   margin: 0 auto;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 /* Background Image - Move down further */
 .background-image-container {
   position: absolute;
-  top: 200px; /* Move the background image further down */
+  top: 100px; /* Move the background image further down */
   left: 0;
-  bottom: 30px;
+  bottom: 20px;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   z-index: -1; /* Ensure it stays in the background */
 }
 
-.background-image {
-  width: 100%;
-  height: 100%;
 
-  object-fit: cover;
-}
-.compass{
-  position: absolute;
-  top: 0px; 
-  left: 5px;;
-  bottom: 90px;
-  width: 100%;
-  height: 100%;
-  z-index: -1; 
+/* Center the images within the slide */
+.swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
-.group{
-  position: absolute;
-  top: 200px; 
-  left: 0;
-  bottom: 30px;
-  width: 100%;
-  height: 100%;
-  z-index: -1; 
-}
 
-.percent{
-  position: absolute;
-  top: 200px; 
-  left: 0;
-  bottom: 30px;
-  width: 100%;
-  height: 100%;
-  z-index: -1; 
-}
-
-.alarm{
- 
-}
 
 /* Swiper Container */
 .swiper-container {
+  /* margin: top 3px; ; */
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -128,18 +99,13 @@ body {
 
 /* No Border and No Padding for Slide Images */
 .slide-image {
-  width: 100%;
+  align-items: center;
+  width: 60%;
   height: auto;
-  object-fit: contain; /* Show full image without cropping */
-  padding: 30px; /* Remove padding */
-  margin: 10px; /* Remove margin */
+  object-fit:cover; /* Show full image without cropping */
   /* transition: transform 0.5s ease; Smooth transition for zoom */
 }
 
-/* Zoom effect on the center slide */
-/* .swiper-slide-active {
-  transform: scale(1.1); /* Slight zoom on the entire slide */
-/* } */ */
 
 /* Pagination Bullets */
 .swiper-pagination-bullet {
@@ -162,154 +128,5 @@ body {
   z-index: 2; /* Ensure pagination is above background */
 }
 
-/* Navigation Arrows */
-.swiper-button-prev,
-.swiper-button-next {
-  color: red; /* Red navigation arrows */
-  width: 50px;
-  height: 50px;
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-/* Responsive Styling */
-@media (max-width: 1024px) {
-  .swiper-slide {
-    width: 80%; /* Adjust the width on tablets */
-  }
-
-  .fire-image {
-    width: 50px;
-    left: -60px;
-  }
-}
-
-@media (max-width: 768px) {
-  .slider-container {
-    height: 300px;
-  }
-
-  .slide-image {
-    width: 70% ;
-  }
-
-  .swiper-slide {
-    width: 90%; /* Adjust the width on mobile */
-  }
-
-  .fire-image {
-    width: 40px;
-    left: -40px;
-  }
-
-  h1 {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .slider-container {
-    height: 250px;
-  }
-
-  .fire-image {
-    width: 30px;
-    left: -30px;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-}
-     
 
 
-/* Adjust the slider container based on viewport sizes */
-@media (max-width: 1024px) {
-  .swiper-slide {
-    width: 80%; /* Adjust width on tablets */
-  }
-
-  .fire-image {
-    width: 50px;
-    left: -60px;
-  }
-}
-
-@media (max-width: 768px) {
-  .slider-container {
-    height: 300px;
-  }
-
-  .slide-image {
-    width: 70%;
-  }
-
-  .swiper-slide {
-    width: 90%; /* Adjust width on tablets */
-  }
-
-  .fire-image {
-    width: 40px;
-    left: -40px;
-  }
-
-  h1 {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .slider-container {
-    height: 250px;
-  }
-
-  .fire-image {
-    width: 30px;
-    left: -30px;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-}
-
-/* Hide scrollbar */
-.no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-.no-scrollbar::-webkit-scrollbar {
-  display: none;  /* Chrome, Safari, and Opera */
-}
-
-/* transition-transform duration-1000 // For 1-second smooth transition */
-
-/* Ensure the background image covers the entire section */
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1; /* Ensure the background is behind the swiper slides */
-}
-
-/* Swiper container full width and height */
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-/* Center the images within the slide */
-.swiper-slide img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}

@@ -1,5 +1,4 @@
 import './App.css';
-import CareerJourney from './Components/CareerJorney';
 import Courses from './Components/Courses';
 import Header from './Components/Header';
 import Hero from './Components/Hero';
@@ -10,8 +9,8 @@ function App() {
     <div className="App">
       <Header/>
       <Hero/>
-      <Courses/>
-      <CareerJourney/>
+      {/* <Courses/> */}
+      
       
       
     </div>

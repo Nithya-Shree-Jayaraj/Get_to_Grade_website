@@ -49,7 +49,7 @@ const HorizontalScroll = () => {
   }, [currentIndex, totalSlides]);
 
   return (
-    <div className="w-full  h-full mt-2 px-4 lg:px-24 font-semibold overflow-hidden relative">
+    <div className="w-full  h-full mt-2 ml-20 mr-20 lg:px-24 font-semibold overflow-hidden relative">
       {/* Slides container */}
       <div
         className={`flex transition-transform ${
