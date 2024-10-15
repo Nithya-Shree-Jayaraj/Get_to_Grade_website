@@ -24,9 +24,6 @@
     font-size: medium;
 }
 
-
-
-
 /* General Body Styling */
 body {
   margin: 0;
@@ -35,13 +32,6 @@ body {
   background-color: #f3f3f3;
 }
 
-/* Foreground Text & Fire Image */
-.fire-image {
-  position: relative;
-  left: -70px; /* Move the fire image further left */
-  top: 0;
-  width: 60px;
-}
 
 /* Slider Container */
 .slider-container {
@@ -57,18 +47,6 @@ body {
   /* margin-top: 50px; */
 }
 
-/* Background Image - Move down further */
-.background-image-container {
-  position: absolute;
-  top: 100px; /* Move the background image further down */
-  left: 0;
-  bottom: 20px;
-  width: 100%;
-  /* height: 100%; */
-  z-index: -1; /* Ensure it stays in the background */
-}
-
-
 /* Center the images within the slide */
 .swiper-slide img {
   max-width: 100%;
@@ -76,44 +54,14 @@ body {
   object-fit: contain;
 }
 
-
-
-/* Swiper Container */
-.swiper-container {
-  /* margin: top 3px; ; */
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  position: relative;
-  overflow: visible; /* Allow images to overlap background */
-}
-
-/* Slider Images */
-.slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90%; /* Ensure equal height for all slides */
-  /* transition: transform 0.5s ease; Smooth transition for zoom */
-}
-
-/* No Border and No Padding for Slide Images */
-.slide-image {
-  align-items: center;
-  width: 60%;
-  height: auto;
-  object-fit:cover; /* Show full image without cropping */
-  /* transition: transform 0.5s ease; Smooth transition for zoom */
-}
-
-
 /* Pagination Bullets */
 .swiper-pagination-bullet {
   background: red; /* Red color for pagination bullets */
   opacity: 0.7;
   position: relative;
   margin: 10px; /* Gap between pagination bullets */
-  z-index: 2; /* Bring bullets in front of the background image */
+  z-index: 10; /* Bring bullets in front of the background image */
+  
 }
 
 .swiper-pagination-bullet-active {
@@ -124,8 +72,9 @@ body {
 /* Adjust pagination bullets to overlap the background image */
 .swiper-pagination {
   position: absolute;
-  bottom: 10%; /* Adjust to move it over the background image */
-  z-index: 2; /* Ensure pagination is above background */
+  /* bottom: 100%; Adjust to move it over the background image */
+  z-index: 20; /* Ensure pagination is above background */
+  top:50%;
 }
 
 

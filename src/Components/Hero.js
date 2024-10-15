@@ -44,8 +44,8 @@ const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
 export default function Hero() {
       return (
 
-            <section>
-                  <section className="py-12">
+            <section >
+                  <section className=" bg-red-500">
 
                         <div className="w-full overflow-hidden bg-gray-100 py-4">
                               <Marquee gradient={false} direction="right" speed={50}>
@@ -76,10 +76,10 @@ export default function Hero() {
                                     <div className="relative w-full h-auto z-0">
                                           <img className="w-full object-cover " src={Gimg} alt="" />
                                           {/* DownArrow and plant images */}
-                                          <img className="absolute top-64 left-8 h-auto object-cover z-10 hidden lg:block" src={DownArrow} alt="" />
-                                          <img className="absolute bottom-52 -left-20 h-auto object-cover z-10 hidden lg:block" src={plant} alt="" />
+                                          <img className="absolute top-64 left-8  md:top-52 md:left-2 h-auto object-cover z-10 hidden lg:block" src={DownArrow} alt="" />
+                                          <img className="absolute md:bottom-36 md:-left-32 h-auto object-cover z-10 hidden lg:block" src={plant} alt="" />
                                           {/* UpArrow image, hidden on mobile */}
-                                          <img className="absolute bottom-32 right-2/3 h-auto object-cover z-10 hidden lg:block" src={UpArrow} alt="" />
+                                          <img className="absolute md:bottom-20 md:right-2/3 h-auto object-cover z-10 hidden lg:block" src={UpArrow} alt="" />
                                     </div>
                               </div>
 
@@ -104,16 +104,16 @@ export default function Hero() {
                         <div className="relative">
                               {/* Foreground Section */}
                               <div className="flex justify-center items-center relative z-10 ">
-                                    <img className="fire-image left-36" src={fire} alt="Fire Icon" />
-                                    <h1 className="font-bold text-4xl">Trending Courses</h1>
+                                    <img className=" absolute right-64 md:left-1/3 " src={fire} alt="Fire Icon" />
+                                    <h1 className="font-bold sm:text-2xl  md:text-4xl text-center mt-5">Trending Course's</h1>
                               </div>
 
                               {/* Slider with Background Image */}
-                              <div className="slider-container w-full h-full relative">
+                              <div className="slider-container w-full h-screen relative">
                                     {/* Background Image */}
-                                    <div className="background-image-container  relative">
+                                    <div className="background-image-container  absolute w-[100%] h-96 rounded-xl -z-10 top-[20vh] ">
                                           <img
-                                                className="background-image  object-cover absolute "
+                                                className="background-image  object-cover absolute w-[100%]  md:mt-20 "
                                                 src={background_img}
                                                 alt="Background"
                                           />
@@ -121,7 +121,7 @@ export default function Hero() {
 
                                     {/* Swiper Slider */}
                                     <Swiper
-                                          spaceBetween={4}  // Gap between images
+                                          spaceBetween={2}  // Gap between images
                                           centeredSlides={true}
                                           pagination={{ clickable: true }}
                                           loop={true}
@@ -132,6 +132,7 @@ export default function Hero() {
                                                 480: {
                                                       slidesPerView: 1,
                                                       centeredSlides: true,  // This ensures the slide is centered on mobile view
+                                                      pagination: false,
                                                 },
                                                 // Tablet view: 2 slides per view
                                                 768: {
@@ -142,11 +143,11 @@ export default function Hero() {
                                                       slidesPerView: 3,
                                                 },
                                           }}
-                                          className="swiper-container"
+                                          className=" relative  bottom-44 md:w-auto md:h-auto z-10 overflow-visible md:bottom-40 "
                                     >
                                           {images.map((image, index) => (
-                                                <SwiperSlide key={index} className="slide flex justify-center items-center">
-                                                      <img src={image} alt={`Slide ${index}`} className="slide-image mx-auto" />
+                                                <SwiperSlide key={index} className="flex justify-center items-center h-80 ">
+                                                      <img src={image} alt={`Slide ${index}`} className="w-96 h-80 mb-72 p-10 justify-center items-center  md:w-full md:h-[480px]  md:items-center md:object-cover md:mb-10  " />
                                                 </SwiperSlide>
                                           ))}
                                     </Swiper>
@@ -155,29 +156,29 @@ export default function Hero() {
 
                         {/* Additional Images Section */}
 
-                        <div className="relative  z-0">
+                        <div className="relative  z-0 ">
                               {/* Display Percent Icon based on screen size */}
                               <img
-                                    className="absolute bottom-~80 right-60 h-auto object-cover z-10 "
+                                    className="absolute bottom-80 right-60 h-auto object-cover z-10 hidden md:block "
                                     src={Percent}
                                     alt="Percent Icon"
                               />
                               {/* Display Compass Icon based on screen size */}
                               <img
-                                    className="absolute bottom-96 right-52 h-auto object-cover z-10 "
+                                    className="absolute bottom-96 right-32 h-auto object-cover z-10 hidden md:block "
                                     src={Compass}
                                     alt="Compass Icon"
                               />
                               {/* Display Alarm Icon based on screen size */}
                               <img
-                                    // className="absolute -bottom-24 right-44 h-40 w-40 object-cover z-10 sm:right-0 " 
-                                    className="absolute  h-40 w-40 object-cover z-10 sm:mx-auto md:-bottom-24 right-44"
+                                    // className="absolute md:top-10 right-44 h-40 w-40 object-cover z-10 sm:right-0 " 
+                                    className="absolute  h-40 w-40 object-cover z-10  md:bottom-96 md:right-28 hidden md:block"
                                     src={Alarm}
                                     alt="Alarm Icon"
                               />
                               {/* Display Group Icon based on screen size */}
                               <img
-                                    className="absolute bottom-80 left-60 h-auto w-16 object-cover z-10 "
+                                    className="absolute bottom-80 left-60 h-auto w-16 object-cover z-10 hidden md:block "
                                     src={Group}
                                     alt="Group Icon"
                               />

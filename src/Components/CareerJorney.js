@@ -3,7 +3,7 @@ import start from '../Assets/start.png'; // This is for the start image
 
 function CareerJourney() {
   return (
-    <div className="p-10 ">
+    <div className="p-10 bg-orange-400 ">
       {/* Header Section with Start Image */}
       <div className="flex flex-col justify-center items-center relative">
         <img
