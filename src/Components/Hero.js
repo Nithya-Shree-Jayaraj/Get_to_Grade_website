@@ -5,14 +5,19 @@ import UpArrow from '../Assets/UpArrow.png';
 import plant from '../Assets/plant.png';
 import Enroll from '../Assets/Enrow_now.png';
 import ytube from '../Assets/utube_icon.png';
-import HorizontalScroll from './HorizontalScroll';
+// import HorizontalScroll from './HorizontalScroll';
+
+
+import categorie from '../Assets/categorie-icon.png';
+import categorie2 from '../Assets/categorie-icon1.png';
+import Marquee from 'react-fast-marquee';
 
 
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react'; // Swiper core and required modules
+import { Swiper, SwiperSlide } from 'swiper/react'; // Swiper core and required modules          
 import { Pagination, Autoplay } from 'swiper/modules'; // Import core modules from 'swiper/modules'
 import 'swiper/css'; // Import Swiper styles
-import 'swiper/css/pagination'; // Import Pagination styles
+import 'swiper/css/pagination'; // Import Pagination styles       
 import CareerJourney from '../Components/CareerJorney';
 
 // Import your images
@@ -33,6 +38,7 @@ import Alarm from '../Assets/alarm.png';
 import Group from '../Assets/Group.png';
 
 
+
 const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
 
 export default function Hero() {
@@ -40,9 +46,27 @@ export default function Hero() {
 
             <section>
                   <section className="py-12">
-                        <div>
-                        <HorizontalScroll />
-                  </div>
+
+                        <div className="w-full overflow-hidden bg-gray-100 py-4">
+                              <Marquee gradient={false} direction="right" speed={50}>
+                                    <div className="flex space-x-4 items-center">
+                                          <img src={categorie} alt="Categorie" className="w-auto h-12" />
+                                          <button className="w-auto border border-slate-400 rounded-lg px-4 py-2">Front-end Development</button>
+                                          <button className="w-auto border border-slate-400 rounded-lg px-4 py-2">Back-end Development</button>
+                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Full-Stack Development</button>
+                                          <img src={categorie2} alt="Categorie 2" className="w-auto h-12" />
+                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">UI & UX</button>
+                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Graphic Designing</button>
+                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Adv Graphic Designing</button>
+                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Video Graphics</button>
+                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Video Editing</button>
+                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Business Management</button>
+                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Digital Marketing</button>
+                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Communication</button>
+                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Placement Training</button>
+                                    </div>
+                              </Marquee>
+                        </div>
 
                         {/* Main container for the content */}
                         <div className="mx-4 lg:mx-24 min-w-fit flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between relative">
@@ -131,10 +155,10 @@ export default function Hero() {
 
                         {/* Additional Images Section */}
 
-                        <div className="relative  z-0 flex-wrap">
+                        <div className="relative  z-0">
                               {/* Display Percent Icon based on screen size */}
                               <img
-                                    className="absolute bottom-80 right-60 h-auto object-cover z-10 "
+                                    className="absolute bottom-~80 right-60 h-auto object-cover z-10 "
                                     src={Percent}
                                     alt="Percent Icon"
                               />
