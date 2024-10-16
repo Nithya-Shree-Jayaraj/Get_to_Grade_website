@@ -7,7 +7,7 @@ export default function Header() {
    const [menuOpen, setMenuOpen] = useState(false);
 
    return (
-      <>
+      <section>
          <header className='flex w-full h-full justify-between p-6 items-center '>
             <div className='flex items-center space-x-3'>
                <img src={LogoImg} alt="logo" className="w-14 h-14" />
@@ -67,7 +67,7 @@ export default function Header() {
                </ul>
             </div>
          </div>
-      </>
+      </section>
    );
 }
 

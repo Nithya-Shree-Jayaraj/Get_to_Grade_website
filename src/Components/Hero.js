@@ -44,10 +44,12 @@ import Group from '../Assets/Group.png';
 import Start_enroll from '../Assets/Start_enroll.png'
 import Start_arrow from '../Assets/Start_arrow.png'
 
-import pathBg from '../Assets/path_bg.png';                // Import the background image
-import bg_dm from '../Assets/bg_dm.png';
-import bg_js from '../Assets/bg_js.png';
-import allimg from '../Assets/allimg.png';
+// import pathBg from '../Assets/path_bg.png';                // Import the background image
+// import bg_dm from '../Assets/bg_dm.png';
+// import bg_js from '../Assets/bg_js.png';
+// import allimg from '../Assets/allimg.png';
+
+import Instructors from './Instructors';
 
 
 
@@ -235,23 +237,25 @@ export default function Hero() {
 
                   </div>
 
+                  <Instructors/>
+
                   {/* Skillled introduce page */}
-                  <div className="relative w-full -z-10 h-screen bg-no-repeat bg-origin-border bg-contain" style={{ backgroundImage: `url(${pathBg})` }}>
+                  {/* <div className="relative w-full -z-10 h-screen bg-no-repeat bg-origin-border bg-contain" style={{ backgroundImage: `url(${pathBg})` }}> */}
                         {/* Button */}
-                        <div className="absolute z-10 ml-[40%] mt-28 font-bold text-xls ">
-                              <button className="flex flex-col items-center border border-gray-700 bg-slate-300 rounded-full w-52 p-2">
-                                    Skilled Introduce
-                              </button>
-                        </div>
+                        {/* <div className="absolute z-10 ml-[40%] mt-28 font-bold text-xls "> */}
+                              {/* <button className="flex flex-col items-center border border-gray-700 bg-slate-300 rounded-full w-52 p-2"> */}
+                                    {/* Skilled Introduce */}
+                              {/* </button> */}
+                        {/* </div> */}
 
                         {/* Content Section */}
-                        <div className="flex justify-center items-center h-full ">
+                        {/* <div className="flex justify-center items-center h-full ">
                               <div className="text-center">
                                     <h2 className="text-3xl font-bold mt-3 ">Our Top Class & Professional  <br /> InstructorsIn One Place</h2>
 
                                     <div className="flex justify-center mt-6 space-x-12">
                                           {/* William Hope */}
-                                          <div className='flex relative  '>
+                                          {/* <div className='flex relative  '>
                                                 <div className='flex relative -z-10 mt-20 '>
                                                       <img src={bg_dm} alt="bg_dm" className="h-[100%] w-full mx-auto" />
                                                 </div>
@@ -261,11 +265,11 @@ export default function Hero() {
                                                       <p className="text-yellow-500 font-bold mr-10">Digital Marketing</p>
                                                 </div>
 
-                                          </div>
+                                          </div> */}
 
 
                                           {/* Jay Selvan */}
-                                          <div className='flex relative'>
+                                          {/* <div className='flex relative'>
                                                 <div className='flex relative -z-10 mt-20 ml-10 '>
                                                       <img src={bg_dm} alt="bg_dm" className="h-[100%] w-full mx-auto" />
                                                 </div>
@@ -274,12 +278,64 @@ export default function Hero() {
                                                       <h3 className="text-2xl font-bold mt-4 ml-20">Jay Selvan</h3>
                                                       <p className="text-yellow-500 font-bold ml-24">Video Editor</p>
                                                 </div>
-                                          </div>
+                                          </div> */}
 
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
+                                          {/* William Hope */}
+                                          {/* <div className='flex relative  '>
+                                                <div className='flex relative -z-10 mt-20 '>
+                                                      <img src={bg_dm} alt="bg_dm" className="h-[100%] w-full mx-auto" />
+                                                </div>
+                                                <div className="text-center absolute z-10 md:left-5">
+                                                      <img src={allimg} alt="William Hope" className="md:h-96 md:w-72  mx-auto" />
+                                                      <h3 className="text-2xl font-bold mt-4 mr-12">William Hope</h3>
+                                                      <p className="text-yellow-500 font-bold mr-10">Digital Marketing</p>
+                                                </div>
+
+                                          </div> */}
+
+
+                                          {/* Jay Selvan */}
+                                          {/* <div className='flex relative'>
+                                                <div className='flex relative -z-10 mt-20 ml-10 '>
+                                                      <img src={bg_dm} alt="bg_dm" className="h-[100%] w-full mx-auto" />
+                                                </div>
+                                                <div className="text-center absolute z-10 ">
+                                                      <img src={allimg} alt="Jay Selvan" className="md:h-96 md:w-72 md:ml-14 mx-auto" />
+                                                      <h3 className="text-2xl font-bold mt-4 ml-20">Jay Selvan</h3>
+                                                      <p className="text-yellow-500 font-bold ml-24">Video Editor</p>
+                                                </div>
+                                          </div> */}
+
+                                          {/* William Hope */}
+                                          {/* <div className='flex relative  '>
+                                                <div className='flex relative -z-10 mt-20 '>
+                                                      <img src={bg_dm} alt="bg_dm" className="h-[100%] w-full mx-auto" />
+                                                </div>
+                                                <div className="text-center absolute z-10 md:left-5">
+                                                      <img src={allimg} alt="William Hope" className="md:h-96 md:w-72  mx-auto" />
+                                                      <h3 className="text-2xl font-bold mt-4 mr-12">William Hope</h3>
+                                                      <p className="text-yellow-500 font-bold mr-10">Digital Marketing</p>
+                                                </div>
+
+                                          </div> */}
+
+
+                                          {/* Jay Selvan */}
+                                          {/* <div className='flex relative'>
+                                                <div className='flex relative -z-10 mt-20 ml-10 '>
+                                                      <img src={bg_dm} alt="bg_dm" className="h-[100%] w-full mx-auto" />
+                                                </div>
+                                                <div className="text-center absolute z-10 ">
+                                                      <img src={allimg} alt="Jay Selvan" className="md:h-96 md:w-72 md:ml-14 mx-auto" />
+                                                      <h3 className="text-2xl font-bold mt-4 ml-20">Jay Selvan</h3>
+                                                      <p className="text-yellow-500 font-bold ml-24">Video Editor</p>
+                                                </div>
+                                          </div> */}
+
+                                    {/* </div> */}
+                              {/* </div> */}
+                        {/* </div> */} 
+                {/* //   </div> */}
 
 
             </section>
