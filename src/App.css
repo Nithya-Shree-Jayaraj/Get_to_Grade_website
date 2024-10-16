@@ -38,7 +38,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  height: 900px;  /* Adjusted height */
+  /* height: 50px;   */
   margin: 0 auto;
   overflow: hidden;
   display: flex;
@@ -50,31 +50,30 @@ body {
 /* Center the images within the slide */
 .swiper-slide img {
   max-width: 100%;
-  max-height: 100%;
+  /* max-height: 100%; */
   object-fit: contain;
 }
 
-/* Pagination Bullets */
+/* Pagination Bullets */ 
 .swiper-pagination-bullet {
-  background: red; /* Red color for pagination bullets */
+  background: black; /* Red color for pagination bullets */
   opacity: 0.7;
   position: relative;
   margin: 10px; /* Gap between pagination bullets */
-  z-index: 10; /* Bring bullets in front of the background image */
+  z-index: 20; /* Bring bullets in front of the background image */
   
 }
 
 .swiper-pagination-bullet-active {
-  background: red;
+  background: black;
   opacity: 1;
 }
 
 /* Adjust pagination bullets to overlap the background image */
 .swiper-pagination {
   position: absolute;
-  /* bottom: 100%; Adjust to move it over the background image */
-  z-index: 20; /* Ensure pagination is above background */
-  top:50%;
+  z-index: 40; 
+  bottom: 70%;
 }
 
 

@@ -12,13 +12,17 @@ import categorie from '../Assets/categorie-icon.png';
 import categorie2 from '../Assets/categorie-icon1.png';
 import Marquee from 'react-fast-marquee';
 
+// import React from 'react';
+import start from '../Assets/start.png'; // This is for the start image
+
+
 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react'; // Swiper core and required modules          
 import { Pagination, Autoplay } from 'swiper/modules'; // Import core modules from 'swiper/modules'
 import 'swiper/css'; // Import Swiper styles
 import 'swiper/css/pagination'; // Import Pagination styles       
-import CareerJourney from '../Components/CareerJorney';
+// import CareerJourney from '../Components/CareerJorney';
 
 // Import your images
 import img1 from '../Assets/img1.svg';
@@ -36,6 +40,15 @@ import Percent from '../Assets/percent.png';
 import Compass from '../Assets/compass.png';
 import Alarm from '../Assets/alarm.png';
 import Group from '../Assets/Group.png';
+
+import Start_enroll from '../Assets/Start_enroll.png'
+import Start_arrow from '../Assets/Start_arrow.png'
+
+import pathBg from '../Assets/path_bg.png';                // Import the background image
+import bg_dm from '../Assets/bg_dm.png';
+import bg_js from '../Assets/bg_js.png';
+import allimg from '../Assets/allimg.png';
+
 
 
 
@@ -100,7 +113,7 @@ export default function Hero() {
                         </div>
                   </section>
 
-                  <section className="relative ">
+                  <section className='mt-0' >
                         <div className="relative">
                               {/* Foreground Section */}
                               <div className="flex justify-center items-center relative z-10 ">
@@ -109,11 +122,11 @@ export default function Hero() {
                               </div>
 
                               {/* Slider with Background Image */}
-                              <div className="slider-container w-full h-screen relative">
+                              <div className="slider-container w-full h-auto relative">
                                     {/* Background Image */}
-                                    <div className="background-image-container  absolute w-[100%] h-96 rounded-xl -z-10 top-[20vh] ">
+                                    <div className="background-image-container  absolute w-[80%] md:w-[100%] h-auto rounded-xl -z-10 top-[20vh]  ">
                                           <img
-                                                className="background-image  object-cover absolute w-[100%]  md:mt-20 "
+                                                className="background-image  object-cover absolute w-[100%]  md:mt-10 "
                                                 src={background_img}
                                                 alt="Background"
                                           />
@@ -132,7 +145,7 @@ export default function Hero() {
                                                 480: {
                                                       slidesPerView: 1,
                                                       centeredSlides: true,  // This ensures the slide is centered on mobile view
-                                                      pagination: false,
+
                                                 },
                                                 // Tablet view: 2 slides per view
                                                 768: {
@@ -143,11 +156,11 @@ export default function Hero() {
                                                       slidesPerView: 3,
                                                 },
                                           }}
-                                          className=" relative  bottom-44 md:w-auto md:h-auto z-10 overflow-visible md:bottom-40 "
+                                          className=" relative  bottom-9 md:w-auto md:h-auto z-10 overflow-visible md:bottom-10 "
                                     >
                                           {images.map((image, index) => (
-                                                <SwiperSlide key={index} className="flex justify-center items-center h-80 ">
-                                                      <img src={image} alt={`Slide ${index}`} className="w-96 h-80 mb-72 p-10 justify-center items-center  md:w-full md:h-[480px]  md:items-center md:object-cover md:mb-10  " />
+                                                <SwiperSlide key={index} className="flex justify-center items-center h-80  md:mt-20 ">
+                                                      <img src={image} alt={`Slide ${index}`} className="w-96 h-72  p-10    md:w-full md:h-[480px]  md:items-center md:object-cover md:mb-10  " />
                                                 </SwiperSlide>
                                           ))}
                                     </Swiper>
@@ -171,7 +184,6 @@ export default function Hero() {
                               />
                               {/* Display Alarm Icon based on screen size */}
                               <img
-                                    // className="absolute md:top-10 right-44 h-40 w-40 object-cover z-10 sm:right-0 " 
                                     className="absolute  h-40 w-40 object-cover z-10  md:bottom-96 md:right-28 hidden md:block"
                                     src={Alarm}
                                     alt="Alarm Icon"
@@ -183,10 +195,91 @@ export default function Hero() {
                                     alt="Group Icon"
                               />
                         </div>
-
-                        <CareerJourney />
-
                   </section>
+
+                  <div className="bg-red-400 ">
+                        {/* Header Section with Start Image */}
+                        <div className="flex flex-col justify-center items-center relative">
+                              <div>
+                                    <img className="items-center absolute" src={Start_arrow} alt="Start_arrow" />
+
+                              </div>
+                              <img
+                                    className="absolute w-40 h-12"
+                                    src={start}
+                                    alt="Start"
+                              />
+                              {/* Description with a <br> for line break */}
+                              <p className="absolute text-gray-600 text-center mt-28 md:mt-16 lg:mt-48 font-serif text-sm md:text-xl lg:text-xl">
+                                    Learn on a dynamic platform with high-quality content, live sessions & mentoring
+                                    <br />
+                                    from leading industry experts to achieve your desired goal.
+                              </p>
+                              {/* Main Title */}
+                              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mt-80">
+                                    Our Expert Services for your Career Goals
+                              </h1>
+                        </div>
+
+                        {/* Background Image Section */}
+                        <div
+                              className="mt-20 w-full h-screen bg-contain bg-center bg-no-repeat"
+                              style={{ backgroundImage: `url(${require('../Assets/flowchart.png')})` }}
+                        >
+                              {/* Content over the background image can go here */}
+
+
+                        </div>
+                        {/* <img className=" absolute  md:ml-52 md:mt-4 md:w-auto md:h-auto  " src={Start_enroll} alt="Enroll" /> */}
+
+
+                  </div>
+
+                  {/* Skillled introduce page */}
+                  <div className="relative w-full -z-10 h-screen bg-no-repeat bg-origin-border bg-contain" style={{ backgroundImage: `url(${pathBg})` }}>
+                        {/* Button */}
+                        <div className="absolute z-10 ml-[40%] mt-28 font-bold text-xls ">
+                              <button className="flex flex-col items-center border border-gray-700 bg-slate-300 rounded-full w-52 p-2">
+                                    Skilled Introduce
+                              </button>
+                        </div>
+
+                        {/* Content Section */}
+                        <div className="flex justify-center items-center h-full ">
+                              <div className="text-center">
+                                    <h2 className="text-3xl font-bold mt-3 ">Our Top Class & Professional  <br /> InstructorsIn One Place</h2>
+
+                                    <div className="flex justify-center mt-6 space-x-12">
+                                          {/* William Hope */}
+                                          <div className='flex relative  '>
+                                                <div className='flex relative -z-10 mt-20 '>
+                                                      <img src={bg_dm} alt="bg_dm" className="h-[100%] w-full mx-auto" />
+                                                </div>
+                                                <div className="text-center absolute z-10 md:left-5">
+                                                      <img src={allimg} alt="William Hope" className="md:h-96 md:w-72  mx-auto" />
+                                                      <h3 className="text-2xl font-bold mt-4 mr-12">William Hope</h3>
+                                                      <p className="text-yellow-500 font-bold mr-10">Digital Marketing</p>
+                                                </div>
+
+                                          </div>
+
+
+                                          {/* Jay Selvan */}
+                                          <div className='flex relative'>
+                                                <div className='flex relative -z-10 mt-20 ml-10 '>
+                                                      <img src={bg_dm} alt="bg_dm" className="h-[100%] w-full mx-auto" />
+                                                </div>
+                                                <div className="text-center absolute z-10 ">
+                                                      <img src={allimg} alt="Jay Selvan" className="md:h-96 md:w-72 md:ml-14 mx-auto" />
+                                                      <h3 className="text-2xl font-bold mt-4 ml-20">Jay Selvan</h3>
+                                                      <p className="text-yellow-500 font-bold ml-24">Video Editor</p>
+                                                </div>
+                                          </div>
+
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
 
 
             </section>
