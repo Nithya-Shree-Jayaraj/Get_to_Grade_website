@@ -60,7 +60,7 @@ export default function Hero() {
       return (
 
             <section >
-                  <section className=" bg-red-500">
+                  <section className=" ">
 
                         <div className="w-full overflow-hidden bg-gray-100 py-4">
                               <Marquee gradient={false} direction="right" speed={50}>
@@ -199,7 +199,7 @@ export default function Hero() {
                         </div>
                   </section>
 
-                  <div className="bg-red-400 ">
+                  <div className=" ">
                         {/* Header Section with Start Image */}
                         <div className="flex flex-col justify-center items-center relative">
                               <div>
