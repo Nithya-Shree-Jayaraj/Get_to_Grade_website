@@ -93,13 +93,14 @@ export default function check() {
                             <p class="mb-8 text-base text-gray-700 md:text-lg bg-red-500">
                                 Here's what our students say about their transformative learning experience: Real stories, real growth. Discover firsthand the impact our courses have had in their lives.
                             </p>
+
+                            
                             <img
                                 src={dot}
                                 alt={dot}
                                 className="w-20 h-20 absolute z-20  "
                             />
                         </div>
-
                     </div>
                 </div>
                 {/* Swiper Testimonials */}
