@@ -82,15 +82,15 @@ export default function check() {
                     <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-full md:px-24 lg:px-8 lg:py-20 ">
                         <div class="relative max-w-3xl mx-auto sm:text-center">
                             <img
-                                className="relative -z-10 lg:bottom-3 lg:-left-32  lg:w-[60%] md:bottom-48 md:left-64 md:w-[66%] bottom-72 left-28 w-[75%]"
+                                className="relative -z-10 lg:bottom-3 lg:-left-32  lg:w-[60%] md:bottom-48 md:left-64 md:w-[66%] bottom-40 left-6 w-[75%]"
                                 src={OurStudent}
                                 alt="Our Student"
                             />
                             <h2 className="text-2xl lg:text-7xl md:text-7xl font-bold  relative z-10 mb-6 font-sans tracking-tight text-black sm:text-4xl sm:leading-none 
-                                           lg:bottom-28 lg:-inset-28 lg:-left-[40%] md:bottom-32 md:-inset-48 md:-left-[30%] w-full text-nowrap lg:space-x-10 md:space-x-0 space-x-1 -inset-72 -left-[50%]">
+                                           lg:bottom-28 lg:-inset-28 lg:-left-[40%] md:bottom-32 md:-inset-48 md:-left-[30%] w-full text-nowrap lg:space-x-10 md:space-x-0 space-x-1 -inset-48 -left-[10%]">
                                 What <span className="text-white text-2xl md:text-5xl lg:text-7xl space-y-20 text-center">our Student’s</span><span> say</span>
                             </h2>
-                            <p class="mb-8 text-base text-gray-700 md:text-lg bg-red-500">
+                            <p class="mb-8 text-base text-gray-700 md:text-lg ">
                                 Here's what our students say about their transformative learning experience: Real stories, real growth. Discover firsthand the impact our courses have had in their lives.
                             </p>
 
