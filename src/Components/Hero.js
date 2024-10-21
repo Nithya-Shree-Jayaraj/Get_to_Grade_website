@@ -8,8 +8,13 @@ import ytube from '../Assets/utube_icon.png';
 
 
 
-import categorie from '../Assets/categorie-icon.png';
-import categorie2 from '../Assets/categorie-icon1.png';
+// import categorie from '../Assets/categorie-icon.png';
+// import categorie2 from '../Assets/categorie-icon1.png';
+import corss from '../Assets/corss.png';
+import corss1 from '../Assets/corss1.png';
+import corss4 from '../Assets/corss4.png';
+import corss5 from '../Assets/corss5.png';
+import brand1 from '../Assets/brand1.png';
 import Marquee from 'react-fast-marquee';
 
 
@@ -42,6 +47,7 @@ import Alarm from '../Assets/alarm.png';
 import Group from '../Assets/Group.png';
 
 
+
 import Start_arrow from '../Assets/Start_arrow.png'
 
 // import pathBg from '../Assets/path_bg.png';                // Import the background image
@@ -63,25 +69,32 @@ export default function Hero() {
                   <section className=" ">
 
                         <div className="w-full overflow-hidden bg-gray-100 py-4">
-                              <Marquee gradient={false} direction="right" speed={50}>
-                                    <div className="flex space-x-4 items-center">
-                                          <img src={categorie} alt="Categorie" className="w-auto h-12" />
+                              <Marquee gradient={false} direction="left" speed={50}>
+                                    <div className="flex space-x-4 items-center ml-5">
+                                          {/* <img src={categorie} alt="Categorie" className="w-auto h-12" />
                                           <button className="w-auto border border-slate-400 rounded-lg px-4 py-2">Front-end Development</button>
                                           <button className="w-auto border border-slate-400 rounded-lg px-4 py-2">Back-end Development</button>
-                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Full-Stack Development</button>
-                                          <img src={categorie2} alt="Categorie 2" className="w-auto h-12" />
-                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">UI & UX</button>
+                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Full-Stack Development</button> */}
+                                          <img src={corss} alt="Categorie" className="w-auto h-auto " />
+                                          <img src={corss1} alt="Categorie" className="w-auto h-auto " />
+                                          <img src={brand1} alt="Categorie 2" className="w-auto h-auto " />
+
+                                          <img src={corss4} alt="Categorie" className="w-auto h-auto " />
+                                          <img src={corss5} alt="Categorie" className="w-auto h-auto " />
+                                          
+                                          {/* <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">UI & UX</button>
                                           <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Graphic Designing</button>
                                           <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Adv Graphic Designing</button>
-                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Video Graphics</button>
-                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Video Editing</button>
-                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Business Management</button>
-                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Digital Marketing</button>
+                                          // <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Video Graphics</button>
+                                          // <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Video Editing</button>
+                                          // <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Business Management</button>
+                                          // <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Digital Marketing</button>
                                           <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Communication</button>
-                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Placement Training</button>
+                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Placement Training</button> */}
                                     </div>
                               </Marquee>
                         </div>
+
 
                         {/* Main container for the content */}
                         <div className="mx-4 lg:mx-24 min-w-fit flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between relative">

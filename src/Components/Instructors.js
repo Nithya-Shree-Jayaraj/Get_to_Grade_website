@@ -78,6 +78,7 @@ const Instructors = () => {
         <button className="flex flex-col items-center border border-gray-700 bg-slate-300 rounded-full w-52 p-2 font-bold text-black">
           Skilled Introduce
         </button>
+       
       </div>
       <div className="flex justify-center items-center h-full overflow-hidden">
         <div className="text-center mt-0 md:mt-0 lg:mt-0">
@@ -217,6 +218,8 @@ const Instructors = () => {
                   >
                     &rarr;
                   </button>
+                  
+
                 </div>
             </div>
           </div>
