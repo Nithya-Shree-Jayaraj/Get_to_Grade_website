@@ -82,7 +82,7 @@ const Instructors = () => {
       </div>
       <div className="flex justify-center items-center h-full overflow-hidden">
         <div className="text-center mt-0 md:mt-0 lg:mt-0">
-          <h2 className="text-2xl md:text-3xl font-bold md:mt-5 lg:-mt-64 mt-10">
+          <h2 className="text-2xl md:text-3xl font-bold  mt-16">
             Our Top Class & Professional <br /> Instructors In One Place
           </h2>
           <div className="flex justify-center  space-x-12">

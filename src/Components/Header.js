@@ -15,6 +15,7 @@ export default function Header() {
             </div>
 
             {/* Toggle button for mobile view */}
+            
             <div className='block order-3 md:hidden '>
                <button onClick={() => setMenuOpen(!menuOpen)} className='text-2xl'>
                   {menuOpen ? '✖' : '☰'} {/* Cross icon when menu is open */}
