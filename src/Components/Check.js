@@ -13,7 +13,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 
 // Import Swiper styles
-import 'swiper/css';
+// import 'swiper/css';
 
 import 'swiper/css/pagination';
 
@@ -65,10 +65,10 @@ const testimonials = [
 
 // export default function check() {
 //     return (
-//         <div className="flex flex-col items-center relative w-full  py-12 ">
+//         <div className="relative flex flex-col items-center w-full py-12 ">
 //             {/* Heading Section */}
 //             <div
-//                 className="relative z-0 w-full  bg-no-repeat bg-contain flex flex-col justify-center items-center "
+//                 className="relative z-0 flex flex-col items-center justify-center w-full bg-no-repeat bg-contain "
 //                 style={{ backgroundImage: `url(${bgg})` }}
 //             >
 //                 <div
@@ -90,7 +90,7 @@ const testimonials = [
 //                             />
 //                             <h2 className="text-2xl lg:text-7xl md:text-7xl font-bold  relative z-10  font-sans tracking-tight text-black 
 //                                            lg:bottom-28 lg:-inset-28 lg:-left-[25%] md:bottom-32 md:-inset-48 md:-left-[30%] w-full text-nowrap lg:space-x-10 md:space-x-0 space-x-1 -inset-48 -left-[10%]">
-//                                 What <span className="text-white text-2xl md:text-5xl lg:text-7xl space-y-20 text-center">our Student’s</span><span> say</span>
+//                                 What <span className="space-y-20 text-2xl text-center text-white md:text-5xl lg:text-7xl">our Student’s</span><span> say</span>
 //                             </h2>
 //                             <p class=" text-base text-gray-700 md:text-xl text-wrap left-36 ">
 //                                 Here's what our students say about their transformative learning experience: Real stories, real growth. Discover firsthand the impact our courses have had in their lives.
@@ -100,7 +100,7 @@ const testimonials = [
 //                             <img
 //                                 src={dot}
 //                                 alt={dot}
-//                                 className="w-20 h-20 absolute z-20  "
+//                                 className="absolute z-20 w-20 h-20 "
 //                             />
 //                         </div>
 //                     </div>
@@ -121,20 +121,20 @@ const testimonials = [
 //                 >
 //                     {testimonials.map((testimonial, index) => (
 //                         <SwiperSlide key={index}>
-//                             <div className=" flex relative text-white h-48  rounded-3xl   " style={{ backgroundImage: `url(${Rectangle})` }}>
+//                             <div className="relative flex h-48 text-white rounded-3xl" style={{ backgroundImage: `url(${Rectangle})` }}>
 //                                 {/* Quote Icon */}
-//                                 <FaQuoteLeft className="absolute   left-4 text-4xl text-black " />
+//                                 <FaQuoteLeft className="absolute text-4xl text-black left-4 " />
 
-//                                 <p className="text-sm justify-center items-center p-10">{testimonial.message}</p>
+//                                 <p className="items-center justify-center p-10 text-sm">{testimonial.message}</p>
 
 //                                 {/* Reviewer Section */}
 
 //                             </div>
-//                             <div className="flex relative  items-center   justify-center flex-col -mt-10">
+//                             <div className="relative flex flex-col items-center justify-center -mt-10">
 //                                 <img
 //                                     src={testimonial.image}
 //                                     alt={testimonial.name}
-//                                     className="w-20 h-20 mb-10  rounded-xl  "
+//                                     className="w-20 h-20 mb-10 rounded-xl "
 //                                 />
 //                                 <div class="flex items-center ">
 //                                     <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
@@ -153,8 +153,8 @@ const testimonials = [
 //                                         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
 //                                     </svg>
 //                                 </div>
-//                                 <h3 className=" lg:text-2xl md:text-2xl text-lg font-semibold ">{testimonial.name}</h3>
-//                                 <p className="text-lg text-black mb-8">{testimonial.role}</p>
+//                                 <h3 className="text-lg font-semibold lg:text-2xl md:text-2xl">{testimonial.name}</h3>
+//                                 <p className="mb-8 text-lg text-black">{testimonial.role}</p>
 //                             </div>
 //                         </SwiperSlide>
 //                     ))}
@@ -165,10 +165,10 @@ const testimonials = [
 // }
 export default function check() {
     return (
-        <div className="flex flex-col items-center relative w-full  py-12 ">
+        <div className="relative flex flex-col items-center w-full py-12 ">
             {/* Heading Section */}
             <div
-                className="relative z-0 w-full  bg-no-repeat bg-contain flex flex-col justify-center items-center "
+                className="relative z-0 flex flex-col items-center justify-center w-full bg-no-repeat bg-contain "
                 style={{ backgroundImage: `url(${bgg})` }}
             >
                 <img
@@ -195,9 +195,9 @@ export default function check() {
                             />
                             <h2 className="text-2xl lg:text-7xl md:text-7xl font-bold  relative z-10  font-sans tracking-tight text-black 
                                            lg:bottom-28 lg:-inset-28 lg:-left-[25%] md:bottom-32 md:-inset-48 md:-left-[30%] w-full text-nowrap lg:space-x-10 md:space-x-0 space-x-1 -inset-48 -left-[10%]">
-                                What <span className="text-white text-2xl md:text-5xl lg:text-7xl space-y-20 text-center">our Student’s</span><span> say</span>
+                                What <span className="space-y-20 text-2xl text-center text-white md:text-5xl lg:text-7xl">our Student’s</span><span> say</span>
                             </h2>
-                            <div className=' w-full h-auto'>
+                            <div className='w-full h-auto '>
                             <p class=" text-base text-gray-700 md:text-xl  ">
                                 Here's what our students say about their transformative learning experience: Real stories, real growth. Discover firsthand the impact our courses have had in their lives.
                             </p>
@@ -206,18 +206,18 @@ export default function check() {
                             <img
                                 src={roll}
                                 alt={roll}
-                                className="w-52 h-52 -right-3  absolute z-20 -bottom-5"
+                                className="absolute z-20 w-52 h-52 -right-3 -bottom-5"
                             />
                             
                             <img
                                 src={dot}
                                 alt={dot}
-                                className="w-20 h-20 absolute z-20 left-96 bottom-14  hidden md:block "
+                                className="absolute z-20 hidden w-20 h-20 left-96 bottom-14 md:block "
                             />
                             <img
                                 src={dot}
                                 alt={dot}
-                                className="w-20 h-20 absolute z-20 left-96 bottom-14 "
+                                className="absolute z-20 w-20 h-20 left-96 bottom-14 "
                             />
                         </div>
                     </div>
@@ -238,20 +238,20 @@ export default function check() {
                 >
                     {testimonials.map((testimonial, index) => (
                         <SwiperSlide key={index}>
-                            <div className=" flex  text-white h-48  rounded-3xl z-30  " style={{ backgroundImage: `url(${Rectangle})` }}>
+                            <div className="z-30 flex h-48 text-white rounded-3xl" style={{ backgroundImage: `url(${Rectangle})` }}>
                                 {/* Quote Icon */}
-                                <FaQuoteLeft className="absolute   left-4 text-4xl text-black " />
+                                <FaQuoteLeft className="absolute text-4xl text-black left-4 " />
 
-                                <p className="text-sm justify-center items-center p-10">{testimonial.message}</p>
+                                <p className="items-center justify-center p-10 text-sm">{testimonial.message}</p>
 
                                 {/* Reviewer Section */}
 
                             </div>
-                            <div className="flex relative  items-center   justify-center flex-col -mt-10">
+                            <div className="relative flex flex-col items-center justify-center -mt-10">
                                 <img
                                     src={testimonial.image}
                                     alt={testimonial.name}
-                                    className="w-20 h-20 mb-10  rounded-xl  "
+                                    className="w-20 h-20 mb-10 rounded-xl "
                                 />
                                 <div class="flex items-center ">
                                     <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
@@ -270,8 +270,8 @@ export default function check() {
                                         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                                     </svg>
                                 </div>
-                                <h3 className=" lg:text-2xl md:text-2xl text-lg font-semibold ">{testimonial.name}</h3>
-                                <p className="text-lg text-black mb-8">{testimonial.role}</p>
+                                <h3 className="text-lg font-semibold lg:text-2xl md:text-2xl">{testimonial.name}</h3>
+                                <p className="mb-8 text-lg text-black">{testimonial.role}</p>
                                 
                             </div>
                         </SwiperSlide>

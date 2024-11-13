@@ -65,29 +65,21 @@ const Instructors = () => {
 
   return (
 
-    <div className="relative w-full h-screen bg-no-repeat bg-origin-border bg-contain  mt-12 " style={{ backgroundImage: `url(${pathBg})` }}>
-      {/* Start_enroll Image - Positioned Below the Flowchart */}
-      {/* <div className=" justify-center  ">
-        <img
-          className="w-auto h-auto "
-          src={Start_enroll}
-          alt="Enroll Now"
-        />
-      </div> */}
-      <div className="absolute z-10 lg:ml-[45%] md:ml-[60%] ml-20   font-bold text-xls">
-        <button className="flex flex-col items-center border border-gray-700 bg-slate-300 rounded-full w-52 p-2 font-bold text-black">
+    <div className="relative w-full h-screen mt-6 bg-no-repeat bg-contain bg-origin-border " style={{ backgroundImage: `url(${pathBg})` }}>
+      <div className=" lg:ml-[43%] md:ml-[60%] ml-20   font-bold text-xls">
+        <button className="flex flex-col items-center p-2 font-bold text-black border border-gray-700 rounded-full bg-slate-300 w-52">
           Skilled Introduce
         </button>
        
       </div>
-      <div className="flex justify-center items-center h-full overflow-hidden">
-        <div className="text-center mt-0 md:mt-0 lg:mt-0">
-          <h2 className="text-2xl md:text-3xl font-bold  mt-16">
+      <div className="flex items-center justify-center h-full overflow-hidden">
+        <div className="mt-0 text-center md:mt-0 lg:mt-0">
+          <h2 className="mt-16 text-2xl font-bold md:text-3xl">
             Our Top Class & Professional <br /> Instructors In One Place
           </h2>
-          <div className="flex justify-center  space-x-12">
+          <div className="flex justify-center space-x-12">
             <div className="flex flex-col overflow-hidden">
-              <div className="flex  space-x-10">
+              <div className="flex space-x-10">
                 {instructors
                   .slice(currentIndex, currentIndex + (windowWidth < 768 ? 1 : 2))
                   .map((instructor, index) => (
@@ -102,10 +94,10 @@ const Instructors = () => {
                           <img
                             src={instructor.img}
                             alt={instructor.name}
-                            className="md:h-96 md:w-72 mx-auto"
+                            className="mx-auto md:h-96 md:w-72"
                           />
                           <h3 className="text-2xl font-bold ">{instructor.name}</h3>
-                          <p className="text-yellow-500 font-bold">{instructor.role}</p>
+                          <p className="font-bold text-yellow-500">{instructor.role}</p>
                         </div>
 
                       </div>
@@ -149,7 +141,7 @@ const Instructors = () => {
                       <img
                         src={Image1}
                         alt="Person 1"
-                        className="w-20 h-20 rounded-full object-cover border-2 border-transparent hover:border-purple-600"
+                        className="object-cover w-20 h-20 border-2 border-transparent rounded-full hover:border-purple-600"
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
@@ -158,49 +150,49 @@ const Instructors = () => {
 
                         }
                         alt="Person 2"
-                        className="w-20 h-20 rounded-full object-cover border-2 border-transparent hover:border-purple-600"
+                        className="object-cover w-20 h-20 border-2 border-transparent rounded-full hover:border-purple-600"
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
                       <img
                         src={Image1}
                         alt="Person 3"
-                        className="w-20 h-20 rounded-full object-cover border-2 border-transparent hover:border-purple-600"
+                        className="object-cover w-20 h-20 border-2 border-transparent rounded-full hover:border-purple-600"
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
                       <img
                         src={Image1}
                         alt="Person 4"
-                        className="w-20 h-20 rounded-full object-cover border-2 border-transparent hover:border-purple-600"
+                        className="object-cover w-20 h-20 border-2 border-transparent rounded-full hover:border-purple-600"
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
                       <img
                         src={Image1}
                         alt="Person 5"
-                        className="w-20 h-20 rounded-full object-cover border-2 border-transparent hover:border-purple-600"
+                        className="object-cover w-20 h-20 border-2 border-transparent rounded-full hover:border-purple-600"
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
                       <img
                         src={Image1}
                         alt="Person 3"
-                        className="w-20 h-20 rounded-full object-cover border-2 border-transparent hover:border-purple-600"
+                        className="object-cover w-20 h-20 border-2 border-transparent rounded-full hover:border-purple-600"
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
                       <img
                         src={Image1}
                         alt="Person 4"
-                        className="w-20 h-20 rounded-full object-cover border-2 border-transparent hover:border-purple-600"
+                        className="object-cover w-20 h-20 border-2 border-transparent rounded-full hover:border-purple-600"
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
                       <img
                         src={Image1}
                         alt="Person 5"
-                        className="w-20 h-20 rounded-full object-cover border-2 border-transparent hover:border-purple-600"
+                        className="object-cover w-20 h-20 border-2 border-transparent rounded-full hover:border-purple-600"
                       />
                     </SwiperSlide>
                   </Swiper>
@@ -208,13 +200,13 @@ const Instructors = () => {
                   {/* Custom Navigation Buttons */}
                   <button
                     ref={prevRef}
-                    className="swiper-button-prev absolute -left-10 top-1/2 transform -translate-y-1/2 bg-black p-1 rounded-full text-white z-10"
+                    className="absolute z-10 p-1 text-white transform -translate-y-1/2 bg-black rounded-full swiper-button-prev -left-10 top-1/2"
                   >
                     &larr;
                   </button>
                   <button
                     ref={nextRef}
-                    className="swiper-button-next absolute -right-10 top-1/2 transform -translate-y-1/2 bg-black p-1 rounded-full text-white z-10"
+                    className="absolute z-10 p-1 text-white transform -translate-y-1/2 bg-black rounded-full swiper-button-next -right-10 top-1/2"
                   >
                     &rarr;
                   </button>

@@ -5,16 +5,21 @@ import UpArrow from '../Assets/UpArrow.png';
 import plant from '../Assets/plant.png';
 import Enroll from '../Assets/Enrow_now.png';
 import ytube from '../Assets/utube_icon.png';
+import flowchart from '../Assets/flowchart.png'
 
 
 
-// import categorie from '../Assets/categorie-icon.png';
+import categorie from '../Assets/categorie-icon.png';
 // import categorie2 from '../Assets/categorie-icon1.png';
-import corss from '../Assets/corss.png';
-import corss1 from '../Assets/corss1.png';
-import corss4 from '../Assets/corss4.png';
-import corss5 from '../Assets/corss5.png';
-import brand1 from '../Assets/brand1.png';
+// import corss from '../Assets/corss.png';
+// import corss1 from '../Assets/corss1.png';
+// import corss4 from '../Assets/corss4.png';
+// import corss5 from '../Assets/corss5.png';
+// import brand1 from '../Assets/brand1.png';
+import second from '../Assets/second.png'
+import third from '../Assets/third.png'
+import four from '../Assets/four.png'
+import five from '../Assets/five.png'
 import Marquee from 'react-fast-marquee';
 
 
@@ -24,7 +29,7 @@ import start from '../Assets/start.png'; // This is for the start image
 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react'; // Swiper core and required modules          
-import { Pagination, Autoplay } from 'swiper/modules'; // Import core modules from 'swiper/modules'
+import { Autoplay } from 'swiper/modules'; // Import core modules from 'swiper/modules'
 import 'swiper/css'; // Import Swiper styles
 import 'swiper/css/pagination'; // Import Pagination styles       
 
@@ -66,85 +71,96 @@ export default function Hero() {
       return (
 
             <section >
-                  <section className=" ">
+                  <section className="bg-red-500">
 
-                        <div className="w-full overflow-hidden bg-gray-100 py-4">
+                        <div className="w-full px-6 pt-6 overflow-hidden md:px-24">
                               <Marquee gradient={false} direction="left" speed={50}>
-                                    <div className="flex space-x-4 items-center ml-5">
-                                          {/* <img src={categorie} alt="Categorie" className="w-auto h-12" />
-                                          <button className="w-auto border border-slate-400 rounded-lg px-4 py-2">Front-end Development</button>
-                                          <button className="w-auto border border-slate-400 rounded-lg px-4 py-2">Back-end Development</button>
-                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Full-Stack Development</button> */}
-                                          <img src={corss} alt="Categorie" className="w-auto h-auto " />
+                                    <div className="flex items-center ml-5 space-x-4 font-bold ">
+                                          <img src={categorie} alt="Categorie" className="w-auto h-14" />
+                                          <button className="w-auto px-4 py-2 bg-gray-200 border rounded-lg border-slate-100 h-14">Front-end Development</button>
+                                          <button className="w-auto px-4 py-2 bg-gray-200 border rounded-lg border-slate-100 h-14">Back-end Development</button>
+                                          <button className="w-56 px-4 py-2 bg-gray-200 border rounded-lg border-slate-100 h-14 ">Full-Stack Development</button>
+                                          {/* <img src={corss} alt="Categorie" className="w-auto h-auto " />
                                           <img src={corss1} alt="Categorie" className="w-auto h-auto " />
                                           <img src={brand1} alt="Categorie 2" className="w-auto h-auto " />
 
                                           <img src={corss4} alt="Categorie" className="w-auto h-auto " />
-                                          <img src={corss5} alt="Categorie" className="w-auto h-auto " />
+                                          <img src={corss5} alt="Categorie" className="w-auto h-auto " /> */}
+                                           <img src={second} alt="Categorie" className="w-auto h-14" />
+                                          <button className="w-56 px-4 py-2 bg-gray-200 border rounded-lg border-slate-100 h-14">UI & UX</button>
+                                          <button className="w-56 px-4 py-2 bg-gray-200 border rounded-lg border-slate-100 h-14">Graphic Designing</button>
+                                          <button className="w-56 px-4 py-2 bg-gray-200 border rounded-lg border-slate-100 h-14">Adv Graphic Designing</button>
+
+                                          <img src={third} alt="Categorie" className="w-auto h-14" />
+                                          <button className="w-56 px-4 py-2 bg-gray-200 border rounded-lg border-slate-100 h-14">Digital Marketing</button>
+                                          <button className="w-56 px-4 py-2 bg-gray-200 border rounded-lg border-slate-100 h-14">Business Management</button>
                                           
-                                          {/* <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">UI & UX</button>
-                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Graphic Designing</button>
-                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Adv Graphic Designing</button>
-                                          // <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Video Graphics</button>
-                                          // <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Video Editing</button>
-                                          // <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Business Management</button>
-                                          // <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Digital Marketing</button>
-                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Communication</button>
-                                          <button className="w-56 border border-slate-400 rounded-lg px-4 py-2">Placement Training</button> */}
+                                          <img src={four} alt="Categorie" className="w-auto h-14" />
+                                           <button className="w-56 px-4 py-2 bg-gray-200 border rounded-lg border-slate-100 h-14">Photograghy</button>
+                                           <button className="w-56 px-4 py-2 bg-gray-200 border rounded-lg border-slate-100 h-14">Videography</button>
+                                           <button className="w-56 px-4 py-2 bg-gray-200 border rounded-lg border-slate-100 h-14">Video Editing</button>
+                                     
+                                           <img src={five} alt="Categorie" className="w-auto h-14" />
+                                          <button className="w-56 px-4 py-2 bg-gray-200 border rounded-lg border-slate-100 h-14">Communication</button>
+                                          <button className="w-56 px-4 py-2 bg-gray-200 border rounded-lg border-slate-100 h-14">Placement Training</button>
                                     </div>
                               </Marquee>
                         </div>
 
 
                         {/* Main container for the content */}
-                        <div className="mx-4 lg:mx-24 min-w-fit flex flex-col lg:flex-row-reverse lg:items-center lg:justify-between relative">
-                             
+                        <div className="relative flex flex-col mx-4 mt-0 md:mx-24 min-w-fit lg:flex-row-reverse lg:items-center lg:justify-between ">
+
                               {/* Image container, first in mobile view */}
-                              <div className="w-full lg:w-1/2 flex justify-center relative mb-0 md:mb-8 lg:mb-0">
-                                    <div className="relative w-full h-auto z-0">
-                                          <img className="w-full object-cover " src={Gimg} alt="" />
+                              <div className="relative flex justify-center w-full mb-0 lg:w-1/2 lg:mb-0 md:left-36">
+                                    <div className="w-full h-auto ">
+                                          <img className="object-cover md:w-[75%] w-full " src={Gimg} alt="" />
                                           {/* DownArrow and plant images */}
-                                          <img className="absolute top-64 left-8  md:top-44 md:left-2 h-auto object-cover z-10 hidden lg:block" src={DownArrow} alt="" />
-                                          <img className="absolute md:bottom-32 md:-left-24 h-auto object-cover z-10 hidden lg:block" src={plant} alt="" />
+                                          <img className="absolute z-10 hidden object-cover h-auto top-64 left-8 md:top-44 md:left-2 lg:block" src={DownArrow} alt="" />
+                                          <img className="absolute z-10 hidden object-cover h-auto md:bottom-32 md:-left-24 lg:block" src={plant} alt="" />
                                           {/* UpArrow image, hidden on mobile */}
                                           <img className="absolute md:bottom-16 md:-left-[10%] h-auto object-cover z-10 hidden lg:block" src={UpArrow} alt="" />
                                     </div>
                               </div>
 
                               {/* Text content container */}
-                              <div className="w-full lg:w-1/2 mt-0 md:mt-6 lg:mt-0 lg:relative ">
-                                    <img src={wordImage} alt="Word Image" className="w-full" />
-                                    {/* <p className="font-semibold text-2xl mt-6">Take up to 5 days to evaluate your purchase.</p> */}
-                                    <p className="text-gray-800 font-semibold text-lg mt-5 leading-relaxed">
-                                          Education is not just about gaining knowledge, it’s
-                                          about unlocking your potential.
+                              <div className="w-full mt-0 lg:w-1/2 lg:mt-0 lg:relative ">
+                                    <img src={wordImage} alt="Word Image" className="md:w-[75%] w-full" />
+                                    {/* <p className="mt-6 text-2xl font-semibold">Take up to 5 days to evaluate your purchase.</p> */}
+                                    <p className="w-[110%] mt-5 text-lg font-semibold leading-relaxed text-gray-800 hidden md:block">
+                                          Education is not just about gaining knowledge, it’s<br/>
+                                          about unlocking your potential. 
                                     </p>
-                                    <div className="flex mt-12 items-center w-full">
-                                          <div className='w-2/3 flex'>
-                                          <div className='w-2/4'><img className="mr-2  md:mr-4 w-48 h-auto md:w-auto md:h-auto order-1 md:order-1 " src={Enroll} alt="Enroll Now" /></div>
-                                          <div className='w-1/4'><img className="mr-3 h-10 md:mr-0 md:h-20 mx-6 order-3 md:order-2 " src={ytube} alt="YouTube Icon" /></div>
-                                          <div className='w-1/4 mr-7 text-nowrap items-end'><a className="h-10 w-28 mt-3 ml-10 font-bold underline block lg:hidden order-2" href="#">Watch Our Story</a></div>
+                                    <p className="w-[110%] mt-5 text-lg font-semibold leading-relaxed text-gray-800 block md:hidden">
+                                          Education is not just about gaining knowledge, it’s
+                                          about unlocking your potential. 
+                                    </p>
+                                    <div className="flex items-center w-full mt-5 md:mt-14 ">
+                                          <div className='flex w-2/3'>
+                                                <div className='w-2/4'><img className="order-1 w-[150%] h-[100%] mr-2 md:mr-4  md:h-auto md:order-1 " src={Enroll} alt="Enroll Now" /></div>
+                                                <div className='w-1/4'><img className="order-3 h-10 mb-5 mr-3 md:mr-0 md:h-14 md:order-2" src={ytube} alt="YouTube Icon" /></div>
+                                                <div className='items-end w-1/4 mr-7 text-nowrap'><a className="order-2 block h-10 mt-3 ml-10 font-bold underline w-28 lg:hidden" href="#">Watch Our Story</a></div>
                                           </div>
-                                          <div className='w-1/3 mr-5 items-start'>
-                                             <a className="h-20 mt-5 w-40   font-bold underline hidden lg:block md:order-3" href="#">Play Video</a>
+                                          <div className='items-start w-1/3 '>
+                                                <a className="hidden w-40 h-20 mt-5 font-bold underline lg:block md:order-3" href="#">Play Video</a>
                                           </div>
-                                          
-                                          
+
+
                                     </div>
                               </div>
                         </div>
                   </section>
 
-                  <section className='mt-0 h-auto' >
+                  <section className='h-auto mt-0 bg-emerald-700' >
                         <div className="relative">
                               {/* Foreground Section */}
-                              <div className="flex justify-center items-center relative z-10 ">
-                                    <img className=" absolute right-64 md:left-1/3 w-10 h-10  md:w-auto md:h-auto mt-3" src={fire} alt="Fire Icon" />
-                                    <h1 className="font-bold sm:text-2xl  md:text-4xl text-center mt-5">Trending Course's</h1>
+                              <div className="relative z-10 flex items-center justify-center ">
+                                    <img className="absolute w-10 h-10 mt-3 right-64 md:left-1/3 md:w-auto md:h-auto" src={fire} alt="Fire Icon" />
+                                    <h1 className="mt-5 font-bold text-center sm:text-2xl md:text-4xl">Trending Course's</h1>
                               </div>
 
                               {/* Slider with Background Image */}
-                              <div className="slider-container w-full h-auto relative">
+                              <div className="relative w-full h-auto slider-container">
                                     {/* Background Image */}
                                     <div className="background-image-container  absolute w-[80%] md:w-[100%] h-auto rounded-xl -z-10 top-[20vh]  ">
                                           <img
@@ -161,7 +177,7 @@ export default function Hero() {
                                           // pagination={{ clickable: true }}
                                           loop={true}
                                           autoplay={{ delay: 2000 }}  // Move every 2 seconds
-                                          modules={[ Autoplay]}  // Register modules
+                                          modules={[Autoplay]}  // Register modules
                                           breakpoints={{
                                                 // Mobile view: 1 slide per view, centered
                                                 480: {
@@ -178,10 +194,10 @@ export default function Hero() {
                                                       slidesPerView: 3,
                                                 },
                                           }}
-                                          className=" relative  bottom-9 md:w-auto md:h-auto z-10 overflow-visible md:bottom-10 "
+                                          className="relative z-10 overflow-visible bottom-9 md:w-auto md:h-auto md:bottom-10"
                                     >
                                           {images.map((image, index) => (
-                                                <SwiperSlide key={index} className="flex justify-center items-center h-80  md:mt-20 ">
+                                                <SwiperSlide key={index} className="flex items-center justify-center h-80 md:mt-20 ">
                                                       <img src={image} alt={`Slide ${index}`} className="w-96 h-72  p-10    md:w-full md:h-[480px]  md:items-center md:object-cover md:mb-10  " />
                                                 </SwiperSlide>
                                           ))}
@@ -191,101 +207,106 @@ export default function Hero() {
 
                         {/* Additional Images Section */}
 
-                        <div className="relative  z-0 block md:hidden  ">
+                        <div className="relative z-0 block md:hidden ">
                               {/* Display Percent Icon based on screen size */}
                               <img
-                                    className="absolute  w-auto h-10 bottom-40 left-72  object-cover z-10  "
+                                    className="absolute z-10 object-cover w-auto h-10 bottom-40 left-72 "
                                     src={Percent}
                                     alt="Percent Icon"
-                              /> 
+                              />
                               {/* Display Compass Icon based on screen size */}
                               <img
-                                    className="absolute h-10 w-10 bottom-60 left-64  object-cover z-10  "
+                                    className="absolute z-10 object-cover w-10 h-10 bottom-60 left-64 "
                                     src={Compass}
                                     alt="Compass Icon"
                               />
                               {/* Display Alarm Icon based on screen size */}
                               <img
-                                    className="absolute  h-16 w-16 -bottom-6 left-72    object-cover z-10   "
+                                    className="absolute z-10 object-cover w-16 h-16 -bottom-6 left-72 "
                                     src={Alarm}
                                     alt="Alarm Icon"
                               />
                               {/* Display Group Icon based on screen size */}
                               <img
-                                    className="absolute w-10 h-12 bottom-48 left-10  object-cover z-10  "
+                                    className="absolute z-10 object-cover w-10 h-12 bottom-48 left-10 "
                                     src={Group}
                                     alt="Group Icon"
                               />
                         </div>
-                        <div className="relative  z-0 hidden md:block">
+                        <div className="relative z-0 hidden md:block">
                               {/* Display Percent Icon based on screen size */}
                               <img
-                                    className="absolute   md:bottom-72 md:right-28 md:h-auto object-cover z-10  hidden md:block "
+                                    className="absolute z-10 hidden object-cover md:bottom-72 md:right-28 md:h-auto md:block "
                                     src={Percent}
                                     alt="Percent Icon"
                               />
                               {/* Display Compass Icon based on screen size */}
                               <img
-                                    className="absolute  md:bottom-96 md:right-20 md:h-auto object-cover z-10 hidden md:block "
+                                    className="absolute z-10 hidden object-cover md:bottom-96 md:right-20 md:h-auto md:block "
                                     src={Compass}
                                     alt="Compass Icon"
                               />
                               {/* Display Alarm Icon based on screen size */}
                               <img
-                                    className="absolute    h-40 w-40 object-cover z-10  bottom-5 -right-1 hidden md:block "
+                                    className="absolute z-10 hidden object-cover w-40 h-40 bottom-5 -right-1 md:block "
                                     src={Alarm}
                                     alt="Alarm Icon"
                               />
                               {/* Display Group Icon based on screen size */}
                               <img
-                                    className="absolute  md:bottom-80 md:left-10 md:h-auto md:w-16 object-cover z-10 hidden md:block "
+                                    className="absolute z-10 hidden object-cover md:bottom-80 md:left-10 md:h-auto md:w-16 md:block "
                                     src={Group}
                                     alt="Group Icon"
                               />
                         </div>
                   </section>
 
-                  <div className="mt-0 ">
+                  <div className="mt-0 bg-yellow-300 ">
                         {/* Header Section with Start Image */}
-                        <div className="flex flex-col justify-center items-center relative">
+                        <div className="relative flex flex-col items-center justify-center">
                               <div className='hidden md:block'>
-                                    <img className="items-center absolute md:h-52 md:ml-52 md:top-14" src={Start_arrow} alt="Start_arrow" />
+                                    <img className="absolute items-center md:h-52 md:ml-52 md:top-14" src={Start_arrow} alt="Start_arrow" />
 
                               </div>
                               <div className='block md:hidden'>
-                                    <img className="items-center absolute h-36 top-10" src={Start_arrow} alt="Start_arrow" />
+                                    <img className="absolute items-center h-36 top-10" src={Start_arrow} alt="Start_arrow" />
 
                               </div>
-                              <img
-                                    className="absolute w-40 h-12"
-                                    src={start}
-                                    alt="Start"
-                              />
+
                               {/* Main Title */}
-                              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mt-64 order-1">
-                                    Our Expert Services for your Career Goals
-                              </h1>
+                              {/* <h1 className="order-1 mt-64 text-2xl font-bold text-center md:text-3xl lg:text-4xl"> */}
+                              {/* Our Expert Services for your Career Goals */}
+                              {/* </h1> */}
                               {/* Description with a <br> for line break */}
-                              <p className=" text-gray-600 text-center mt-10 font-serif text-sm md:text-xl lg:text-xl order-2">
+                              {/* <p className="order-2 mt-10 font-serif text-sm text-center text-gray-600 md:text-xl lg:text-xl">
                                     Learn on a dynamic platform with high-quality content, live sessions & mentoring
                                     <br />
                                     from leading industry experts to achieve your desired goal.
-                              </p>
-                              
+                              </p> */}
+
+
+                              <div>
+                                    <section id="course" className="section-course">
+                                          {/* <p className="course-content">How We Start Journey</p> */}
+                                          <img
+                                                className="w-64 h-20 "
+                                                src={start}
+                                                alt="Start"
+                                          />
+                                          <h3 className="course-paragraup">Our Expert Services for your Career Goals</h3>
+                                          <p className="mt-6 course-paragraup1">
+                                                Learn on a dynamic platform with high-quality content, live sessions & mentoring
+                                                from leading industry experts to achieve your desired goal.
+                                          </p>
+                                          <img src={flowchart} alt="firebtn" className="career-image" />
+                                          <button className="course-btn">
+                                                Enroll Now
+                                          </button>
+                                    </section>
+
+                              </div>
+
                         </div>
-
-                        {/* Background Image Section */}
-                        <div
-                              className="mt-20 w-full h-screen bg-contain bg-center bg-no-repeat"
-                              style={{ backgroundImage: `url(${require('../Assets/flowchart.png')})` }}
-                        >
-                              {/* Content over the background image can go here */}
-                        </div>
-
-                        
-
-
-
                   </div>
 
                   <Instructors />
