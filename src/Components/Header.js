@@ -7,7 +7,7 @@ export default function Header() {
    const [menuOpen, setMenuOpen] = useState(false);
 
    return (
-      <section className=''>
+      <section className='w-full px-0 overflow-hidden md:px-16 '>
          <header className='flex items-center justify-between h-full p-6 '>
             <div className='flex flex-col items-center space-y-3 md:flex-row '>
                <img src={LogoImg} alt="logo" className="w-14 h-14" />

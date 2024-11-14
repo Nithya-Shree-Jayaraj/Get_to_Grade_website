@@ -7,7 +7,7 @@ import Check from './Components/Check';
 
 function App() {
   return (
-    <div className="App">
+    <div className="box-border w-screen h-screen p-0 m-0 overflow-x-hidden App">
       <Header/>
       <Hero/>
       {/* <Testimonials/> */}

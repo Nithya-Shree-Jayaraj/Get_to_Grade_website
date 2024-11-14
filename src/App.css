@@ -93,15 +93,13 @@ body {
 }
 
 .course-paragraup {
-  font-size: 1.5em;
   margin-bottom: 20px;
 }
 
 .course-paragraup1 {
-  font-size: 1em;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   line-height: 1.5;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -110,6 +108,7 @@ body {
   height: auto;
   display: block;
   margin: 0 auto 20px; /* Center and add bottom margin */
+  margin-top: 40px;
 }
 .section-Cource{
   /* padding-top: -200px; */
@@ -149,10 +148,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .section-course {
-    text-align: center; /* Align text center for all sizes */
-  }
-
+  
   .career-image {
     width: 100%;
   }
@@ -165,7 +161,7 @@ body {
   }
 
   .career-image {
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -188,7 +184,7 @@ body {
   }
 
   .career-image {
-    width: 70%;
+    width: 100%;
   }
 }
 

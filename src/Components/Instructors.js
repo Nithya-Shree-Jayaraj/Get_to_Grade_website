@@ -64,52 +64,58 @@ const Instructors = () => {
   }, []);
 
   return (
+      <div className="relative w-full mt-20 bg-no-repeat bg-contain bg-origin-border " style={{ backgroundImage: `url(${pathBg})` }}>
+        <div className=" lg:ml-[43%] md:ml-[60%] ml-[26%]  font-bold text-xls ">
+          <button className="flex flex-col items-center p-2 font-bold text-black border border-gray-700 rounded-full bg-slate-300 w-52 ">
+            Skilled Introduce
+          </button>
 
-    <div className="relative w-full h-screen mt-6 bg-no-repeat bg-contain bg-origin-border " style={{ backgroundImage: `url(${pathBg})` }}>
-      <div className=" lg:ml-[43%] md:ml-[60%] ml-20   font-bold text-xls">
-        <button className="flex flex-col items-center p-2 font-bold text-black border border-gray-700 rounded-full bg-slate-300 w-52">
-          Skilled Introduce
-        </button>
-       
-      </div>
-      <div className="flex items-center justify-center h-full overflow-hidden">
-        <div className="mt-0 text-center md:mt-0 lg:mt-0">
-          <h2 className="mt-16 text-2xl font-bold md:text-3xl">
-            Our Top Class & Professional <br /> Instructors In One Place
-          </h2>
-          <div className="flex justify-center space-x-12">
-            <div className="flex flex-col overflow-hidden">
-              <div className="flex space-x-10">
-                {instructors
-                  .slice(currentIndex, currentIndex + (windowWidth < 768 ? 1 : 2))
-                  .map((instructor, index) => (
-                    <div key={index} className="flex flex-col items-center mt-10 ml-20">
-                      <div className="relative mt-20">
-                        <img
-                          src={bg_dm}
-                          alt="bg_dm"
-                          className="w-full h-auto mb-16"
-                        />
-                        <div className="absolute inset-0 flex flex-col items-center justify-end ">
+        </div>
+        <div className="flex items-center justify-center h-full mt-8 overflow-hidden">
+          <div className="text-center md:mt-5">
+            <h2 className="text-2xl font-bold md:text-3xl">
+              Our Top Class & Professional <br /> Instructors In One Place
+            </h2>
+            <div className="flex justify-center space-x-12">
+              <div className="flex flex-col overflow-hidden">
+                <div className="flex space-x-10">
+                  {instructors
+                    .slice(currentIndex, currentIndex + (windowWidth < 768 ? 1 : 2))
+                    .map((instructor, index) => (
+                      <div key={index} className="flex flex-col items-center mt-10 ml-20">
+                        <div className="relative mt-16 right-10">
                           <img
-                            src={instructor.img}
-                            alt={instructor.name}
-                            className="mx-auto md:h-96 md:w-72"
+                            src={bg_dm}
+                            alt="bg_dm"
+                            className="w-full h-auto mb-16"
                           />
-                          <h3 className="text-2xl font-bold ">{instructor.name}</h3>
-                          <p className="font-bold text-yellow-500">{instructor.role}</p>
+                          <div className="absolute inset-0 flex flex-col items-center justify-end ">
+                            <img
+                              src={instructor.img}
+                              alt={instructor.name}
+                              className="mx-auto md:h-96 md:w-72"
+                            />
+                            <h3 className="text-2xl font-bold ">{instructor.name}</h3>
+                            <p className="font-bold text-yellow-500">{instructor.role}</p>
+                          </div>
+
                         </div>
 
                       </div>
 
-                    </div>
+                    ))}
 
-                  ))}
+                </div>
+
+                {/* Image scroll */}
                 
               </div>
+            </div>
+          </div>
 
-              {/* Image scroll */}
-              <div className="md:w-[80%] lg:w-[100%] w-[50%] border border-slate-400 rounded-full  mt-16 max-w-lg mx-auto relative">
+        </div>
+        <div className="md:w-[80%] lg:w-[100%] w-[50%] border border-slate-400 rounded-full   max-w-lg mx-auto relative bg-gray-200 mt-14 p-6">
+      
                   <Swiper
                     modules={[Navigation, Autoplay]}
                     navigation={{
@@ -135,13 +141,13 @@ const Instructors = () => {
                         slidesPerView: 5,
                       },
                     }}
-                    className="relative "
+                    className="relative"
                   >
                     <SwiperSlide className="flex justify-center">
                       <img
                         src={Image1}
                         alt="Person 1"
-                        className="object-cover w-20 h-20 border-2 border-transparent rounded-full hover:border-purple-600"
+                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 "
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
@@ -150,49 +156,49 @@ const Instructors = () => {
 
                         }
                         alt="Person 2"
-                        className="object-cover w-20 h-20 border-2 border-transparent rounded-full hover:border-purple-600"
+                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 "
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
                       <img
                         src={Image1}
                         alt="Person 3"
-                        className="object-cover w-20 h-20 border-2 border-transparent rounded-full hover:border-purple-600"
+                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 "
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
                       <img
                         src={Image1}
                         alt="Person 4"
-                        className="object-cover w-20 h-20 border-2 border-transparent rounded-full hover:border-purple-600"
+                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 "
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
                       <img
                         src={Image1}
                         alt="Person 5"
-                        className="object-cover w-20 h-20 border-2 border-transparent rounded-full hover:border-purple-600"
+                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 "
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
                       <img
                         src={Image1}
                         alt="Person 3"
-                        className="object-cover w-20 h-20 border-2 border-transparent rounded-full hover:border-purple-600"
+                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 "
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
                       <img
                         src={Image1}
                         alt="Person 4"
-                        className="object-cover w-20 h-20 border-2 border-transparent rounded-full hover:border-purple-600"
+                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 "
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
                       <img
                         src={Image1}
                         alt="Person 5"
-                        className="object-cover w-20 h-20 border-2 border-transparent rounded-full hover:border-purple-600"
+                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 "
                       />
                     </SwiperSlide>
                   </Swiper>
@@ -200,7 +206,7 @@ const Instructors = () => {
                   {/* Custom Navigation Buttons */}
                   <button
                     ref={prevRef}
-                    className="absolute z-10 p-1 text-white transform -translate-y-1/2 bg-black rounded-full swiper-button-prev -left-10 top-1/2"
+                    className="absolute z-10 p-1 text-white transform -translate-y-1/2 bg-black rounded-full swiper-button-prev -left-10 top-1/2 "
                   >
                     &larr;
                   </button>
@@ -210,24 +216,12 @@ const Instructors = () => {
                   >
                     &rarr;
                   </button>
+
                   
-
                 </div>
-            </div>
-          </div>
-        </div>
-
       </div>
+  
 
-
-
-      
-
-      
-
-
-
-    </div>
 
   )
 }
