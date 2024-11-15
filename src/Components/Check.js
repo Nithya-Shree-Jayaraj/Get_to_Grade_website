@@ -67,7 +67,7 @@ const testimonials = [
 export default function check() {
     return (
         <section className=' max-h-[900px] '>
-        <div className="relative flex flex-col items-center w-full py-12 overflow-hidden  top-4 max-h-[900px]">
+        <div className="relative flex flex-col items-center w-full py-12 overflow-hidden  md:top-4 top-0 md:max-h-[900px] 2xl:max-h-[1200px] max-h-[750px]">
             {/* Heading Section */}
             <div
                 className="relative z-0 flex flex-col items-center justify-center w-full bg-no-repeat bg-contain"
@@ -76,23 +76,17 @@ export default function check() {
                 <img
                                 src={ellipse}
                                 alt={ellipse}
-                                className="w-20 h-20 absolute  lg:bottom-[50%] lg:right-[29%] bottom-[59%] right-[13%]   "
+                                className="w-20 h-20 absolute  lg:bottom-[50%] lg:right-[29%] bottom-[58%] right-[13%] 2xl:bottom-[56%]  2xl:right-[36%] "
                             />
                             <img
                                 src={ellipse}
                                 alt={ellipse}
-                                className="absolute  w-20 h-20 lg:bottom-[32%] lg:left-[24%] bottom-[40%] left-[2%]"
+                                className="absolute  w-20 h-20 lg:bottom-[32%] lg:left-[24%] bottom-[38%] left-[1%] 2xl:bottom-[44%] 2xl:left-[33%]"
                             />
                 <div
                     className="text-center relative w-[60%]  lg:w-[40%] 2xl:w-[42%] h-screen bg-no-repeat bg-contain lg:left-2 md:left-64 left-0  flex justify-center items-center "
                     style={{ backgroundImage: `url(${HeartIMG})` }}
                 >
-
-                    {/* <img
-                        className="relative -z-10 lg:bottom-24 lg:left-64 lg:w-[80%] md:bottom-48 md:left-64 md:w-[66%] bottom-72 left-28 w-[75%]"
-                        src={OurStudent}
-                        alt="Our Student"
-                    /> */}
                     <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full  lg:max-w-full 2xl:max-w-full ">
                         <div class="relative max-w-3xl items-center">
                             <img
@@ -100,15 +94,6 @@ export default function check() {
                                 src={whole}
                                 alt="Our Student"
                             />
-                            {/* <img
-                                className="relative -z-10 lg:bottom-5 lg:-left-6  lg:w-[60%] md:bottom-48 md:left-64 md:w-[66%] bottom-40 left-6 w-[75%]"
-                                src={OurStudent}
-                                alt="Our Student"
-                            />
-                            <h2 className="text-2xl lg:text-7xl md:text-7xl font-bold  relative z-10  font-sans tracking-tight text-black 
-                                           lg:bottom-28 lg:-inset-28 lg:-left-[25%] md:bottom-32 md:-inset-48 md:-left-[30%] w-full text-nowrap lg:space-x-10 md:space-x-0 space-x-1 -inset-48 -left-[10%]">
-                                What <span className="space-y-20 text-2xl text-center text-white md:text-5xl lg:text-7xl">our Student’s</span><span> say</span>
-                            </h2> */}
                             <div className='lg:w-[160%] w-[180%] h-auto justify-center relative lg:bottom-16 lg:right-48 right-24 bottom-32  2xl:w-[180%] 2xl:bottom-64 2xl:right-72'>
                             <p class=" text-base text-gray-700 lg:text-lg  font-hero-font font-bold 2xl:text-3xl ">
                                 Here's what our students say about their transformative learning experience:
@@ -119,24 +104,19 @@ export default function check() {
                              <img
                                 src={roll}
                                 alt={roll}
-                                className="absolute z-20 h-auto -bottom-24 w-52 -right-[35%] hidden lg:block"
+                                className="absolute z-20 h-auto -bottom-24 w-52 -right-[35%] hidden lg:block  2xl:-bottom-10 2xl:h-80 2xl:-right-[40%] 2xl:hidden"
                             />
                             
                             <img
                                 src={dot}
                                 alt={dot}
-                                className="absolute z-20 w-20 h-20 lg:bottom-0 lg:-right-10 -right-14 bottom-16"
+                                className="absolute z-20 w-20 h-20 lg:bottom-0 lg:-right-10 -right-14 bottom-16 2xl:bottom-40 2xl:right-10 2xl:w-28 2xl:h-28"
                             />
-                            {/* <img
-                                src={dot}
-                                alt={dot}
-                                className="absolute z-20 w-20 h-20 left-96 bottom-14 "
-                            />  */}
                         </div>
                     </div>
                 </div>
                 {/* Swiper Testimonials */}
-                <Swiper
+                <div className='relative 2xl:bottom-96 '><Swiper
                     modules={[Pagination, Autoplay]}
                     spaceBetween={30}
                     centeredSlides={true}
@@ -147,14 +127,14 @@ export default function check() {
                     pagination={{
                         clickable: true,
                     }}
-                    className="w-full max-w-3xl bottom-60 2xl:bottom-[140%]"
+                    className="w-full max-w-3xl bottom-60"
                 >
                     {testimonials.map((testimonial, index) => (
                         <SwiperSlide key={index}>
-                            <div className='lg:px-10 2xl:px-0'>
-                            <div className="z-30 flex h-48 text-white rounded-3xl" style={{ backgroundImage: `url(${Rectangle})` }}>
+                            <div className='ml-48 mr-48 md:mr-0 md:ml-0 lg:px-10 2xl:px-0'>
+                            <div className="z-30 flex h-48 text-white rounded-3xl " style={{ backgroundImage: `url(${Rectangle})` }}>
                                 {/* Quote Icon */}
-                                <FaQuoteLeft className="absolute text-4xl text-black lg:left-10 left-10 " />
+                                <FaQuoteLeft className="absolute text-4xl text-black lg:left-10 left-52 2xl:left-6" />
 
                                 <p className="items-center justify-center p-10 text-sm">{testimonial.message}</p>
 
@@ -163,7 +143,7 @@ export default function check() {
                             </div>
                             </div>
                             
-                            <div className="relative flex flex-col items-center justify-center -mt-10">
+                            <div className="relative flex flex-col items-center justify-center -mt-10 ">
                                 <img
                                     src={testimonial.image}
                                     alt={testimonial.name}
@@ -192,7 +172,8 @@ export default function check() {
                             </div>
                         </SwiperSlide>
                     ))}
-                </Swiper>
+                </Swiper></div>
+                
             </div>
 
             
