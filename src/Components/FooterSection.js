@@ -33,9 +33,9 @@ const FooterSection = () => {
     return (
         <div className=''>
 
-            <div className="md:max-h-[550px] max-h-[900px] bg-blue-950 flex flex-col relative top-60 ">
+            <div className="md:max-h-[550px] max-h-[900px] bg-blue-950 flex flex-col relative top-20 ">
                 <div className="container flex-grow px-4 py-8 mx-auto ">
-                    <div className="relative overflow-hidden rounded-lg shadow-lg -top-24 bg-orange-50">
+                    <div className="relative overflow-hidden rounded-lg shadow-lg -top-24 bg-orange-50 ">
                         <div className="p-6 space-y-6">
 
                             {/* Header */}
@@ -53,9 +53,9 @@ const FooterSection = () => {
                                         <h1 className="text-2xl font-bold md:text-3xl">Base way Meetup</h1>
                                     </div>
                                 </div>
-                                <div className="flex mr-4 space-x-2">
+                                <div className="flex mr-4 space-x-2 ">
                                     {Object.entries(timeLeft).map(([unit, value]) => (
-                                        <div key={unit} className="bg-[#1a237e] text-white p-2 rounded-lg text-center w-16">
+                                        <div key={unit} className="bg-[#1a237e] text-white  rounded-lg text-center w-20 justify-center items-center p-6 space-y-4 ">
                                             <div className="text-xl font-bold">{value.toString().padStart(2, '0')}</div>
                                             <div className="text-xs">{unit.charAt(0).toUpperCase() + unit.slice(1)}</div>
                                         </div>
@@ -113,7 +113,7 @@ const FooterSection = () => {
                                             <input
                                                 type="email"
                                                 placeholder="Enter your email address"
-                                                className="relative items-center h-16 px-4 py-3 pr-32 text-sm text-black bg-gray-300 border-gray-700 rounded-full md:right-0 lg:right-0 right-7 w-72 md:w-full lg:w-full md:text-md lg:text-md dark:bg-gray-700 dark:placeholder-gray-700 dark:text-white focus:outline-1 focus:ring-2 focus:ring-black"
+                                                className="relative items-center h-16 px-4 py-3 pr-32 text-sm bg-gray-200 border-gray-700 rounded-full bg-gray-50-400 text-wh md:right-0 lg:right-0 right-7 w-72 md:w-full lg:w-full md:text-md lg:text-m dark:text-white focus:outline-1 focus:ring-2 focus:ring-black"
                                                 required />
                                             <button
                                                 type="submit"
