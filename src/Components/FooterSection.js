@@ -35,7 +35,7 @@ const FooterSection = () => {
 
             <div className="md:max-h-[550px] max-h-[900px] bg-blue-950 flex flex-col relative top-20 ">
                 <div className="container flex-grow px-4 py-8 mx-auto ">
-                    <div className="relative overflow-hidden rounded-lg shadow-lg -top-24 bg-orange-50 ">
+                    <div className="relative overflow-hidden rounded-lg shadow-lg -top-20 bg-orange-50 ">
                         <div className="p-6 space-y-6">
 
                             {/* Header */}
@@ -108,7 +108,8 @@ const FooterSection = () => {
 
                                     {/* Email subscription */}
                                     <div className="relative max-w-md p-6 mx-auto rounded-lg shadow-sm md:top-20">
-                                        <h3 className="mb-2 text-sm font-bold text-center text-blue-800 md:text-lg lg:text-lg md:text-center">Get Regular Updates from Get to Grade</h3>
+                                        <h3 className="hidden mb-2 text-sm font-bold text-center text-blue-800 md:text-lg lg:text-lg md:text-center lg:block">Get Regular Updates from Get to Grade</h3>
+                                        <h3 className="block mb-2 text-sm font-bold text-center text-blue-800 md:text-lg lg:text-lg md:text-center lg:hidden">Get Regular Updates from<br/>Get to Grade</h3>
                                         <form className="relative">
                                             <input
                                                 type="email"

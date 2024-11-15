@@ -76,17 +76,15 @@ export default function check() {
                 <img
                                 src={ellipse}
                                 alt={ellipse}
-                                className="w-20 h-20 absolute  lg:bottom-[54%] lg:right-[27%] bottom-[59%] right-[13%]   "
+                                className="w-20 h-20 absolute  lg:bottom-[50%] lg:right-[29%] bottom-[59%] right-[13%]   "
                             />
                             <img
                                 src={ellipse}
                                 alt={ellipse}
-                                className="absolute  w-20 h-20 lg:bottom-[36%] lg:left-[22%] bottom-[40%] left-[2%]"
+                                className="absolute  w-20 h-20 lg:bottom-[32%] lg:left-[24%] bottom-[40%] left-[2%]"
                             />
-                            
-                            
                 <div
-                    className="text-center relative w-[60%]  lg:w-[40%] h-screen bg-no-repeat bg-contain lg:left-2 md:left-64 left-0  flex justify-center items-center "
+                    className="text-center relative w-[60%]  lg:w-[40%] 2xl:w-[42%] h-screen bg-no-repeat bg-contain lg:left-2 md:left-64 left-0  flex justify-center items-center "
                     style={{ backgroundImage: `url(${HeartIMG})` }}
                 >
 
@@ -95,10 +93,10 @@ export default function check() {
                         src={OurStudent}
                         alt="Our Student"
                     /> */}
-                    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full  lg:max-w-full ">
+                    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full  lg:max-w-full 2xl:max-w-full ">
                         <div class="relative max-w-3xl items-center">
                             <img
-                                className="relative -z-10 lg:bottom-28 lg:-left-4  lg:w-[100%] md:bottom-48 md:left-64  bottom-40 left-0 w-[100%]"
+                                className="relative -z-10 lg:bottom-32 lg:-left-4  lg:w-[100%] md:bottom-48 md:left-64  bottom-40 left-0 w-[100%] 2xl:bottom-80 "
                                 src={whole}
                                 alt="Our Student"
                             />
@@ -111,9 +109,10 @@ export default function check() {
                                            lg:bottom-28 lg:-inset-28 lg:-left-[25%] md:bottom-32 md:-inset-48 md:-left-[30%] w-full text-nowrap lg:space-x-10 md:space-x-0 space-x-1 -inset-48 -left-[10%]">
                                 What <span className="space-y-20 text-2xl text-center text-white md:text-5xl lg:text-7xl">our Student’s</span><span> say</span>
                             </h2> */}
-                            <div className='lg::w-[160%] w-[180%] h-auto justify-center relative lg:bottom-16 lg:right-48 right-24 bottom-32 '>
-                            <p class=" text-base text-gray-700 lg:text-lg  font-hero-font font-bold  ">
-                                Here's what our students say about their transformative learning experience: Real stories, real growth. Discover firsthand the impact our courses have had in their lives.
+                            <div className='lg:w-[160%] w-[180%] h-auto justify-center relative lg:bottom-16 lg:right-48 right-24 bottom-32  2xl:w-[180%] 2xl:bottom-64 2xl:right-72'>
+                            <p class=" text-base text-gray-700 lg:text-lg  font-hero-font font-bold 2xl:text-3xl ">
+                                Here's what our students say about their transformative learning experience:
+                                 Real stories, real growth. Discover firsthand the impact our courses have had in their lives.
                             </p>
 
                             </div>
@@ -148,14 +147,14 @@ export default function check() {
                     pagination={{
                         clickable: true,
                     }}
-                    className="w-full max-w-3xl bottom-60 "
+                    className="w-full max-w-3xl bottom-60 2xl:bottom-[140%]"
                 >
                     {testimonials.map((testimonial, index) => (
                         <SwiperSlide key={index}>
-                            <div className='px-10'>
+                            <div className='lg:px-10 2xl:px-0'>
                             <div className="z-30 flex h-48 text-white rounded-3xl" style={{ backgroundImage: `url(${Rectangle})` }}>
                                 {/* Quote Icon */}
-                                <FaQuoteLeft className="absolute text-4xl text-black lg:left-4 left-10 " />
+                                <FaQuoteLeft className="absolute text-4xl text-black lg:left-10 left-10 " />
 
                                 <p className="items-center justify-center p-10 text-sm">{testimonial.message}</p>
 
@@ -168,7 +167,7 @@ export default function check() {
                                 <img
                                     src={testimonial.image}
                                     alt={testimonial.name}
-                                    className="w-20 h-20 mb-10 rounded-xl "
+                                    className="w-20 h-20 mb-2 rounded-xl "
                                 />
                                 <div class="flex items-center ">
                                     <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
@@ -188,7 +187,7 @@ export default function check() {
                                     </svg>
                                 </div>
                                 <h3 className="text-lg font-semibold lg:text-2xl md:text-2xl">{testimonial.name}</h3>
-                                <p className="mb-8 text-lg text-black">{testimonial.role}</p>
+                                <p className="text-lg text-black mb-7">{testimonial.role}</p>
                                 
                             </div>
                         </SwiperSlide>

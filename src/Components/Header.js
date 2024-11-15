@@ -10,8 +10,8 @@ export default function Header() {
       <section className='w-full px-0 overflow-hidden md:px-16 '>
          <header className='flex items-center justify-between h-full p-6 '>
             <div className='flex flex-col items-center space-y-3 md:flex-row '>
-               <img src={LogoImg} alt="logo" className="w-14 h-14" />
-               <h1 className='text-xl font-black'>Get to Grade</h1>
+               <img src={LogoImg} alt="logo" className="w-14 h-14 2xl:w-24" />
+               <h1 className='text-xl font-black 2xl:text-2xl'>Get to Grade</h1>
             </div>
 
             {/* Toggle button for mobile view */}
@@ -24,26 +24,26 @@ export default function Header() {
 
             {/* Navigation for Desktop View */}
             <nav className='justify-center flex-1 hidden w-6/12 px-10 md:flex'>
-               <ul className='flex font-bold space-x-9'>
-                  <li><a className='text-yellow-400 border-b-4 border-yellow-400' href="#">Home</a></li>
-                  <li><a className='' href="#">About Us</a></li>
+               <ul className='flex font-bold space-x-9 '>
+                  <li><a className='text-yellow-400 border-b-4 border-yellow-400 2xl:text-2xl ' href="#">Home</a></li>
+                  <li><a className='2xl:text-2xl ' href="#">About Us</a></li>
                   <li className="relative">
-                     <span className="text-sm font-bold">Course</span>
-                     <span className="absolute top-0 right-0 px-1 py-0 -mt-6 -mr-1 text-xs font-bold rounded-full">
+                     <span className="text-sm font-bold 2xl:text-2xl ">Course</span>
+                     <span className="absolute top-0 right-0 px-1 py-0 -mt-6 -mr-1 text-xs font-bold rounded-full 2xl:text-2xl ">
                         <img src={Vector} alt="notification" />
                      </span>
                   </li>
-                  <li><a href="#">Mentor's</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">FAQ's</a></li>
+                  <li><a className='2xl:text-2xl ' href="#">Mentor's</a></li>
+                  <li><a className='2xl:text-2xl ' href="#">Contact</a></li>
+                  <li><a className='2xl:text-2xl ' href="#">FAQ's</a></li>
                </ul>
             </nav>
 
             {/* Actions for Desktop */}
             <div className='flex items-center space-x-5 md:justify-end'> 
-                <img src={Icon} alt='icon' className="w-6 h-6 sm:order-1 md:order-1 " />
-               <a className='hidden text-base font-semibold border-b border-black md:flex md:order-2' href="#">Upload Your Resume</a>
-               <button className='px-5 py-2 text-sm font-semibold text-white bg-blue-900 rounded-md md:px-4 md:py-1 md:font-bold sm:order-2 md:order-3'>Enroll Now</button>
+                <img src={Icon} alt='icon' className="w-6 h-6 sm:order-1 md:order-1 2xl:w-10 2xl:h-10" />
+               <a className='hidden text-base font-semibold border-b border-black md:flex md:order-2 2xl:text-2xl' href="#">Upload Your Resume</a>
+               <button className='px-5 py-2 text-sm font-semibold text-white bg-blue-900 rounded-md md:px-4 md:py-1 md:font-bold sm:order-2 md:order-3 2xl:text-2xl 2xl:p-2'>Enroll Now</button>
             </div>
          </header>
 

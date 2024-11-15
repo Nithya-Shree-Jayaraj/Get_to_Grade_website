@@ -66,14 +66,14 @@ const Instructors = () => {
   return (
       <div className="relative w-full mt-20 bg-no-repeat bg-contain bg-origin-border " style={{ backgroundImage: `url(${pathBg})` }}>
         <div className=" lg:ml-[43%] md:ml-[60%] ml-[26%]  font-bold text-xls ">
-          <button className="flex flex-col items-center p-2 font-bold text-black border border-gray-700 rounded-full bg-slate-300 w-52 ">
+          <button className="flex flex-col items-center p-2 font-bold text-black border border-gray-700 rounded-full bg-slate-300 w-52 2xl:w-[30%] 2xl:p-6 2xl:text-2xl ">
             Skilled Introduce
           </button>
 
         </div>
         <div className="flex items-center justify-center h-full mt-8 overflow-hidden">
           <div className="text-center md:mt-5">
-            <h2 className="text-2xl font-bold md:text-3xl">
+            <h2 className="text-2xl font-bold md:text-3xl 2xl:text-5xl 2xl:leading-normal">
               Our Top Class & Professional <br /> Instructors In One Place
             </h2>
             <div className="flex justify-center space-x-12">
@@ -87,7 +87,7 @@ const Instructors = () => {
                           <img
                             src={bg_dm}
                             alt="bg_dm"
-                            className="w-full h-auto mb-16"
+                            className="w-full h-auto mb-16 2xl:mb-20"
                           />
                           <div className="absolute inset-0 flex flex-col items-center justify-end ">
                             <img
@@ -95,8 +95,8 @@ const Instructors = () => {
                               alt={instructor.name}
                               className="mx-auto md:h-96 md:w-72"
                             />
-                            <h3 className="text-2xl font-bold ">{instructor.name}</h3>
-                            <p className="font-bold text-yellow-500">{instructor.role}</p>
+                            <h3 className="text-2xl font-bold 2xl:text-3xl">{instructor.name}</h3>
+                            <p className="font-bold text-yellow-500 2xl:text-3xl">{instructor.role}</p>
                           </div>
 
                         </div>
@@ -114,7 +114,7 @@ const Instructors = () => {
           </div>
 
         </div>
-        <div className="md:w-[80%] lg:w-[100%] w-[50%] border border-slate-400 rounded-full   max-w-lg mx-auto relative bg-gray-200 mt-14 p-6">
+        <div className="md:w-[80%] lg:w-[100%] w-[50%] border border-slate-400 rounded-full   max-w-lg mx-auto relative bg-gray-200 mt-14 lg:p-6 2xl:py-10">
       
                   <Swiper
                     modules={[Navigation, Autoplay]}
@@ -147,7 +147,7 @@ const Instructors = () => {
                       <img
                         src={Image1}
                         alt="Person 1"
-                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 "
+                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 2xl:w-24 2xl:h-24 "
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
@@ -156,49 +156,49 @@ const Instructors = () => {
 
                         }
                         alt="Person 2"
-                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 "
+                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 2xl:w-24 2xl:h-24"
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
                       <img
                         src={Image1}
                         alt="Person 3"
-                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 "
+                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 2xl:w-24 2xl:h-24"
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
                       <img
                         src={Image1}
                         alt="Person 4"
-                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 "
+                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 2xl:w-24 2xl:h-24"
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
                       <img
                         src={Image1}
                         alt="Person 5"
-                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 "
+                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 2xl:w-24 2xl:h-24"
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
                       <img
                         src={Image1}
                         alt="Person 3"
-                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 "
+                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 2xl:w-24 2xl:h-24"
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
                       <img
                         src={Image1}
                         alt="Person 4"
-                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 "
+                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 2xl:w-24 2xl:h-24"
                       />
                     </SwiperSlide>
                     <SwiperSlide className="flex justify-center">
                       <img
                         src={Image1}
                         alt="Person 5"
-                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 "
+                        className="object-cover h-20 border-2 border-transparent rounded-full w-14 2xl:w-24 2xl:h-24"
                       />
                     </SwiperSlide>
                   </Swiper>
