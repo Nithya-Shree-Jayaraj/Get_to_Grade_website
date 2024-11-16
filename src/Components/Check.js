@@ -76,12 +76,12 @@ export default function check() {
                 <img
                                 src={ellipse}
                                 alt={ellipse}
-                                className="w-20 h-20 absolute  xl:bottom-[52%] xl:right-[32%] lg:bottom-[50%] lg:right-[22%] bottom-[55%] right-[20%] 2xl:bottom-[55%]  2xl:right-[38%] "
+                                className="w-20 h-20 absolute  xl:bottom-[56%] xl:right-[32%] lg:bottom-[50%] lg:right-[22%] bottom-[55%] right-[20%] 2xl:bottom-[55%]  2xl:right-[38%] "
                             />
                             <img
                                 src={ellipse}
                                 alt={ellipse}
-                                className="absolute  w-20 h-20 xl:bottom-[34%] xl:left-[27%] lg:left-[12%] lg:bottom-[28%] bottom-[35%] left-[5%] 2xl:bottom-[43%] 2xl:left-[35%]"
+                                className="absolute  w-20 h-20 xl:bottom-[38%] xl:left-[28%] lg:left-[12%] lg:bottom-[28%] bottom-[35%] left-[5%] 2xl:bottom-[43%] 2xl:left-[35%]"
                             />
                 <div
                     className="text-center relative w-[60%]  xl:w-[40%] 2xl:w-[42%] lg:w-[50%] h-screen bg-no-repeat bg-contain xl:left-2 lg:left-10     left-0  flex justify-center items-center "
