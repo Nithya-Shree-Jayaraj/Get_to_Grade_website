@@ -82,7 +82,7 @@ export default function Hero() {
 
 
                         {/* Main container for the content */}
-                        <div className="relative flex flex-col mx-4 mt-0 lg:mx-24 min-w-fit lg:flex-row-reverse xl:items-center xl:justify-between ">
+                        <div className="relative flex flex-col mx-4 mt-0 xl:mx-24 lg:mx-16 min-w-fit lg:flex-row-reverse xl:items-center xl:justify-between ">
 
                               {/* Image container, first in mobile view */}
                               <div className="relative flex justify-center w-full mb-0 xl:w-1/2 xl:mb-0 lg:left-36">
@@ -92,25 +92,24 @@ export default function Hero() {
                                           <img className="absolute z-10 hidden object-cover h-auto top-64 left-8 xl:top-24 xl:-left-20 
                                           lg:top-14 lg:-left-20 lg:block 2xl:block 2xl:top-48 2xl:w-[30%] w-40 xl:w-auto " src={DownArrow} alt="" />
                                           
-                                          <img className="absolute z-10 hidden object-cover h-auto lg:bottom-10 lg:w-20 lg:-left-40 xl:-left-52 xl:w-auto
+                                          <img className="absolute z-10 hidden object-cover h-auto lg:bottom-10 lg:w-20 lg:-left-36 xl:-left-52 xl:w-auto
                                           xl:bottom-20 lg:block 2xl:block 2xl:bottom-52 2xl:w-[18%]  2xl:-left-52" src={plant} alt="" />
                                           {/* UpArrow image, hidden on mobile */}
-                                          <img className="absolute xl:bottom-4 xl:-left-[26%]  lg:-left-[35%] h-auto  object-cover z-10 
-                                          hidden lg:block w-80 lg:w-64 xl:w-80 lg:-bottom-1 2xl:block 2xl:w-[40%] 2xl:bottom-[10%] 2xl:-left-[11%]" src={UpArrow} alt="" />
+                                          <img className="absolute xl:bottom-4 xl:-left-[26%]  lg:-left-[28%] h-auto  object-cover z-10 
+                                          hidden lg:block w-80 lg:w-64 xl:w-80 lg:-bottom-1  2xl:block 2xl:w-[40%] 2xl:bottom-[10%] 2xl:-left-[11%]" src={UpArrow} alt="" />
                                     </div>
                               </div>
 
                               {/* Text content container */}
                               <div className="w-full mt-0 xl:w-1/2 xl:mt-0 xl:relative lg:mt-14">
                                     <img src={wordImage} alt="Word Image" className="lg:w-[80%] w-full 2xl:w-[95%] xl:w-[80%]" />
-                                    {/* <p className="mt-6 text-2xl font-semibold">Take up to 5 days to evaluate your purchase.</p> */}
-                                    <p className="xl:w-[110%] mt-5 text-xl font-semibold font-hero-font leading-normal text-gray-800 
-                                    hidden md:block  lg:leading-relaxed lg:text-xl xl:text-2xl  2xl:[150%] 2xl:text-4xl 2xl:leading-relaxed">
+                                    <p className="xl:w-[100%] mt-5 text-xl font-semibold font-hero-font leading-normal text-gray-800 
+                                    hidden  xl:block  lg:leading-relaxed lg:text-xl xl:text-2xl  2xl:[150%] 2xl:text-4xl 2xl:leading-relaxed">
                                           Education is not just about gaining knowledge, it’s<br />
                                           about unlocking your potential.
                                     </p>
-                                    <p className="w-[110%] mt-5 text-lg font-semibold leading-normal text-gray-800 block md:hidden  lg:text-lg">
-                                          Education is not just about gaining knowledge, it’s
+                                    <p className="w-[110%] mt-5 text-lg font-semibold leading-normal text-gray-800 block md:hidden  xl:hidden font-hero-font">
+                                          Education is not just about gaining knowledge, it’s 
                                           about unlocking your potential.
                                     </p>
                                     <div className="flex items-center w-full mt-5 lg:mt-10 ">
@@ -259,12 +258,12 @@ export default function Hero() {
                                           />
                                           <h3 className="block text-2xl w-[100%] font-bold course-paragraup lg:hidden">Our Expert Services for your Career Goals</h3>
                                           <p className="block w-[100%] mt-6 font-semibold course-paragraup1 font-hero-font lg:hidden items-center justify-center ">
-                                                Learn on a dynamic platform with high-quality content, live sessions & mentoring
+                                                Learn on a dynamic platform with high-quality content, live sessions & mentoring <br/>
                                                 from leading industry experts to achieve your desired goal.
                                           </p>
                                           <h3 className="hidden font-bold course-paragraup lg:block">Our Expert Services for your Career Goals</h3>
-                                          <p className="hidden mt-6 font-semibold course-paragraup1 font-hero-font lg:block 2xl:block 2xl:text-xl ">
-                                                Learn on a dynamic platform with high-quality content, live sessions & mentoring<br />
+                                          <p className="hidden mt-6 font-semibold course-paragraup1 font-hero-font lg:block xl:block 2xl:block 2xl:text-xl ">
+                                                Learn on a dynamic platform with high-quality content, live sessions & mentoring
                                                 from leading industry experts to achieve your desired goal.
                                           </p>
                                           <img src={flowchart} alt="firebtn" className=" career-image" />
