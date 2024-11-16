@@ -85,24 +85,24 @@ export default function Hero() {
                         <div className="relative flex flex-col mx-4 mt-0 xl:mx-24 lg:mx-16 min-w-fit sm:flex-row-reverse xl:items-center xl:justify-between ">
 
                               {/* Image container, first in mobile view */}
-                              <div className="relative flex justify-center w-full mb-0 xl:w-1/2 xl:mb-0 lg:left-36 xl:left-[18%] ">
+                              <div className="relative flex justify-center w-full mb-0 xl:w-1/2 xl:mb-0 lg:left-36 xl:right-[10%] xl:mt-8 ">
                                     <div className="w-full h-auto ">
-                                          <img className="object-cover lg:w-[70%] w-full 2xl:w-[90%] xl:w-[70%] sm:w-[90%] " src={Gimg} alt="" />
+                                          <img className="object-cover lg:w-[70%] w-full 2xl:w-[90%] xl:w-[80%] sm:w-[90%] " src={Gimg} alt="" />
                                           {/* DownArrow and plant images */}
                                           <img className="absolute z-10 hidden object-cover h-auto top-64 left-8 xl:top-24 xl:-left-20 
                                           lg:top-14 lg:-left-20 lg:block 2xl:block 2xl:top-52 2xl:w-[30%] w-40 xl:w-auto " src={DownArrow} alt="" />
                                           
-                                          <img className="absolute z-10 hidden object-cover h-auto lg:bottom-10 lg:w-20 lg:-left-36 xl:-left-52 xl:w-auto
-                                          xl:bottom-20 lg:block 2xl:block 2xl:bottom-52 2xl:w-[18%]  2xl:-left-52" src={plant} alt="" />
+                                          <img className="absolute z-10 hidden object-cover h-auto lg:bottom-10 lg:w-20 lg:-left-36 xl:-left-48 xl:w-auto
+                                          xl:bottom-28 lg:block 2xl:block 2xl:bottom-52 2xl:w-[18%]  2xl:-left-52" src={plant} alt="" />
                                           {/* UpArrow image, hidden on mobile */}
-                                          <img className="absolute xl:bottom-4 xl:-left-[26%]  lg:-left-[28%] h-auto  object-cover z-10 
+                                          <img className="absolute xl:bottom-6 xl:-left-[24%]  lg:-left-[28%] h-auto  object-cover z-10 
                                           hidden lg:block w-80 lg:w-64 xl:w-80 lg:-bottom-1  2xl:block 2xl:w-[40%] 2xl:bottom-[10%] 2xl:-left-[11%]" src={UpArrow} alt="" />
                                     </div>
                               </div>
 
                               {/* Text content container */}
-                              <div className="w-full mt-0 xl:w-1/2 xl:-mt-10 xl:relative lg:mt-14 sm:mt-14 sm:mx-8 xl:mx-0 ">
-                                    <img src={wordImage} alt="Word Image" className="lg:w-[80%] w-full 2xl:w-[100%] xl:w-[90%]" />
+                              <div className="w-full mt-0 xl:w-1/2 xl:-mt-32 xl:relative lg:mt-14 sm:mt-14 sm:mx-8 xl:mx-0 ">
+                                    <img src={wordImage} alt="Word Image" className="lg:w-[80%] w-full 2xl:w-[100%] xl:w-[100%]" />
                                     <p className="xl:w-[100%] mt-5 text-xl font-semibold font-hero-font leading-normal text-gray-800 
                                     hidden  xl:block  lg:leading-relaxed lg:text-xl xl:text-2xl  2xl:[150%] 2xl:text-4xl 2xl:leading-relaxed">
                                           Education is not just about gaining knowledge, it’s<br />
@@ -112,20 +112,22 @@ export default function Hero() {
                                           Education is not just about gaining knowledge, it’s 
                                           about unlocking your potential.
                                     </p>
-                                    <div className="flex items-center w-full mt-5 lg:mt-10 ">
+                                    
+                              </div>
+                              
+                        </div>
+                        <div className="flex items-center w-full mt-5 lg:mt-10 xl:ml-20 xl:-mt-[8%]">
                                           <div className='flex w-2/3 '>
-                                                <div className='w-2/4 '><img className="order-1 md:w-[150%] md:h-[100%]  mr-2 lg:mr-4  lg:h-auto lg:order-1 sm:w-[100%] sm:h-[90%] " src={Enroll} alt="Enroll Now" /></div>
-                                                <div className='w-1/4 mb-8'><img className="order-3 mr-3 h-10 xl:mr-0 xl:h-16 xl:w-16 lg:order-2 2xl:h-[60%] 2xl:w-[60%] lg:h-10 lg:w-10 " src={ytube} alt="YouTube Icon" /></div>
+                                                <div className='w-2/4 '><img className="order-1 md:w-[150%] xl:w-[80%] xl:h-[80%] md:h-[100%]  mr-2 lg:mr-4  lg:h-auto lg:order-1 sm:w-[100%] sm:h-[90%] " src={Enroll} alt="Enroll Now" /></div>
+                                                <div className='w-1/4 mb-8'><img className="order-3 mr-3 h-10  xl:h-16 xl:w-16 lg:order-2 2xl:h-[60%] 2xl:w-[60%] lg:h-10 lg:w-10 xl:-ml-[45%] xl:mt-3 " src={ytube} alt="YouTube Icon" /></div>
                                                 <div className='items-end w-1/4 text-nowrap'><a className="order-2 block h-10 mt-3 ml-4 font-bold underline w-28 xl:hidden " href="#">Watch Our Story</a></div>
                                           </div>
-                                          <div className='items-start w-1/3 -ml-32 2xl:-ml-56 '>
-                                                <a className="hidden w-40 h-20 mt-5 font-bold underline xl:block xl:order-3 2xl:text-2xl" href="#">Play Video</a>
+                                          <div className='items-start w-1/3 -ml-32 xl:2xl:-ml-56 '>
+                                                <a className="hidden w-40 h-20 mt-5 font-bold underline xl:block xl:order-3 2xl:text-2xl " href="#">Play Video</a>
                                           </div>
 
 
                                     </div>
-                              </div>
-                        </div>
                   </section>
 
                   <section className='h-auto mt-0' >
