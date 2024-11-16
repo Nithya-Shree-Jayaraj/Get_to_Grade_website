@@ -65,7 +65,7 @@ const Instructors = () => {
 
   return (
       <div className="relative w-full mt-20 bg-no-repeat bg-contain bg-origin-border " style={{ backgroundImage: `url(${pathBg})` }}>
-        <div className=" xl:ml-[43%] lg:ml-[40%] ml-[26%]  font-bold text-xls  ">
+        <div className=" xl:ml-[43%] lg:ml-[40%] ml-[26%]  font-bold text-xls sm:ml-[40%] ">
           <button className="flex flex-col items-center p-2 font-bold text-black border border-gray-700 rounded-full bg-slate-300 w-52 2xl:w-[30%] 2xl:p-6 2xl:text-2xl ">
             Skilled Introduce
           </button>

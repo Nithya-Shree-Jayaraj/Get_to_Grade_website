@@ -95,8 +95,8 @@ export default function check() {
                                 alt="Our Student"
                             />
                             <div className='xl:w-[160%] w-[180%] h-auto justify-center relative lg:right-56 xl:bottom-16 xl:right-48 right-24 bottom-32
-                              2xl:w-[180%] 2xl:bottom-64 2xl:right-72'>
-                            <p class=" text-base text-gray-700 xl:text-xl  font-hero-font font-bold 2xl:text-2xl ">
+                              2xl:w-[180%] 2xl:bottom-64 2xl:right-72 sm:right-44'>
+                            <p class=" text-base text-gray-700 xl:text-xl  font-hero-font font-bold 2xl:text-2xl sm:text-lg ">
                                 Here's what our students say about their transformative learning experience:
                                  Real stories, real growth. Discover firsthand the impact our courses have had in their lives.
                             </p>

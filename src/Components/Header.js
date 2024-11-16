@@ -41,10 +41,10 @@ export default function Header() {
             </nav>
 
             {/* Actions for Desktop */}
-            <div className='flex items-center w-4/12 mt-4 space-x-5 lg:justify-end'> 
-                <img src={Icon} alt='icon' className="w-6 h-6 sm:order-1 lg:order-1 lg:hidden xl:block" />
+            <div className='flex items-center w-4/12 mt-4 space-x-5 lg:justify-end '> 
+                <img src={Icon} alt='icon' className="w-6 h-6 sm:order-1 lg:order-1 lg:block xl:block sm:hidden" />
                <a className='hidden text-base font-semibold border-b border-black lg:flex lg:order-2 lg:text-sm text-nowrap' href="#">Upload Your Resume</a>
-               <button className='px-5 py-2 text-sm font-semibold text-white bg-blue-900 rounded-lg lg:px-4 lg:py-1 sm:order-2 lg:order-3 xl:font-bold text-nowrap'>Enroll Now</button>
+               <button className='px-5 py-2 text-sm font-semibold text-white bg-blue-900 rounded-lg lg:px-4 lg:py-1 sm:order-2 sm:hidden lg:order-3 xl:font-bold text-nowrap lg:block xl:block 2xl:block'>Enroll Now</button>
             </div>
          </header>
 
