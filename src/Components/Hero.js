@@ -85,30 +85,30 @@ export default function Hero() {
                         <div className="relative flex flex-col mx-4 mt-0 xl:mx-24 lg:mx-16 min-w-fit sm:flex-row-reverse xl:items-center xl:justify-between ">
 
                               {/* Image container, first in mobile view */}
-                              <div className="relative flex justify-center w-full mb-0 xl:w-1/2 xl:mb-0 lg:left-36">
+                              <div className="relative flex justify-center w-full mb-0 xl:w-1/2 xl:mb-0 lg:left-36 xl:left-[18%] ">
                                     <div className="w-full h-auto ">
-                                          <img className="object-cover lg:w-[80%] w-full 2xl:w-[90%] xl:w-[65%] sm:w-[90%] " src={Gimg} alt="" />
+                                          <img className="object-cover lg:w-[70%] w-full 2xl:w-[90%] xl:w-[70%] sm:w-[90%] " src={Gimg} alt="" />
                                           {/* DownArrow and plant images */}
                                           <img className="absolute z-10 hidden object-cover h-auto top-64 left-8 xl:top-24 xl:-left-20 
-                                          lg:top-28 lg:-left-12 lg:block 2xl:block 2xl:top-52 2xl:w-[30%] w-40 xl:w-auto " src={DownArrow} alt="" />
+                                          lg:top-14 lg:-left-20 lg:block 2xl:block 2xl:top-52 2xl:w-[30%] w-40 xl:w-auto " src={DownArrow} alt="" />
                                           
-                                          <img className="absolute z-10 hidden object-cover h-auto lg:bottom-28 lg:w-20 lg:-left-28 xl:-left-52 xl:w-auto
+                                          <img className="absolute z-10 hidden object-cover h-auto lg:bottom-10 lg:w-20 lg:-left-36 xl:-left-52 xl:w-auto
                                           xl:bottom-20 lg:block 2xl:block 2xl:bottom-52 2xl:w-[18%]  2xl:-left-52" src={plant} alt="" />
                                           {/* UpArrow image, hidden on mobile */}
-                                          <img className="absolute xl:bottom-4 xl:-left-[26%]  lg:-left-[16%] h-auto  object-cover z-10 
-                                          hidden lg:block w-80 lg:w-64 xl:w-80 lg:bottom-10  2xl:block 2xl:w-[40%] 2xl:bottom-[10%] 2xl:-left-[11%]" src={UpArrow} alt="" />
+                                          <img className="absolute xl:bottom-4 xl:-left-[26%]  lg:-left-[28%] h-auto  object-cover z-10 
+                                          hidden lg:block w-80 lg:w-64 xl:w-80 lg:-bottom-1  2xl:block 2xl:w-[40%] 2xl:bottom-[10%] 2xl:-left-[11%]" src={UpArrow} alt="" />
                                     </div>
                               </div>
 
                               {/* Text content container */}
-                              <div className="w-full mt-0 xl:w-1/2 xl:mt-0 xl:relative lg:mt-14 sm:mt-14 sm:mx-8 lg:mx-2">
-                                    <img src={wordImage} alt="Word Image" className="lg:w-[90%] w-full 2xl:w-[100%] xl:w-[80%]" />
+                              <div className="w-full mt-0 xl:w-1/2 xl:-mt-10 xl:relative lg:mt-14 sm:mt-14 sm:mx-8 xl:mx-0 ">
+                                    <img src={wordImage} alt="Word Image" className="lg:w-[80%] w-full 2xl:w-[100%] xl:w-[90%]" />
                                     <p className="xl:w-[100%] mt-5 text-xl font-semibold font-hero-font leading-normal text-gray-800 
-                                    hidden  lg:block xl:block  lg:leading-relaxed lg:text-xl xl:text-2xl  2xl:[150%] 2xl:text-4xl 2xl:leading-relaxed">
+                                    hidden  xl:block  lg:leading-relaxed lg:text-xl xl:text-2xl  2xl:[150%] 2xl:text-4xl 2xl:leading-relaxed">
                                           Education is not just about gaining knowledge, it’s<br />
                                           about unlocking your potential.
                                     </p>
-                                    <p className="w-[110%] mt-5 text-lg font-semibold leading-normal lg:hidden text-gray-800 block md:hidden  xl:hidden font-hero-font">
+                                    <p className="w-[110%] mt-5 text-lg font-semibold leading-normal text-gray-800 block md:hidden  xl:hidden font-hero-font">
                                           Education is not just about gaining knowledge, it’s 
                                           about unlocking your potential.
                                     </p>
@@ -131,9 +131,9 @@ export default function Hero() {
                   <section className='h-auto mt-0' >
                         <div className="relative">
                               {/* Foreground Section */}
-                              <div className="relative z-10 flex items-center justify-center mt-20 2xl:mt-0 left-6 lg:left-16 sm:mt-14 lg:mt-7 ">
+                              <div className="relative z-10 flex items-center justify-center mt-20 2xl:mt-0 left-6 lg:left-16 sm:mt-14 ">
                                     <img className="absolute w-10 h-10 bottom-[10%]  right-64 left-[24%] xl:left-[36%] lg:w-14 
-                                    sm:left-[31%] lg:h-auto 2xl:w-20 2xl:left-[35%] xl:-bottom-2 lg:left-[33%] lg:-bottom-2" src={fire} alt="Fire Icon" />
+                                    sm:left-[31%] lg:h-auto 2xl:w-20 2xl:left-[35%] xl:-bottom-2 lg:left-[29%] lg:-bottom-2" src={fire} alt="Fire Icon" />
                                     <h1 className="-mt-10 font-bold text-center sm:text-2xl lg:text-4xl 2xl:text-6xl 2xl:mt-0">Trending Course's</h1>
                               </div>
 
