@@ -64,16 +64,16 @@ const Instructors = () => {
   }, []);
 
   return (
-      <div className="relative w-full mt-20 bg-no-repeat bg-contain bg-origin-border " style={{ backgroundImage: `url(${pathBg})` }}>
+      <div className="relative w-full mt-20 bg-no-repeat bg-contain font-hero-poppins bg-origin-border " style={{ backgroundImage: `url(${pathBg})` }}>
         <div className=" xl:ml-[43%] lg:ml-[40%] ml-[26%]  font-bold text-xls sm:ml-[40%] ">
-          <button className="flex flex-col items-center p-2 font-bold text-black border border-gray-700 rounded-full bg-slate-300 w-52 2xl:w-[30%] 2xl:p-6 2xl:text-2xl ">
+          <button className="flex flex-col items-center p-2 font-bold font-hero-poppins text-black border border-gray-700 rounded-full bg-slate-300 w-52 2xl:w-[30%] 2xl:p-6 2xl:text-2xl ">
             Skilled Introduce
           </button>
 
         </div>
         <div className="flex items-center justify-center h-full mt-8 overflow-hidden">
           <div className="text-center lg:mt-5">
-            <h2 className="text-2xl font-bold lg:text-2xl 2xl:text-5xl 2xl:leading-normal">
+            <h2 className="text-2xl font-bold lg:text-2xl 2xl:text-5xl 2xl:leading-normal font-hero-poppins">
               Our Top Class & Professional <br /> Instructors In One Place
             </h2>
             <div className="flex justify-center space-x-12">

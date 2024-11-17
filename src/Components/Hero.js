@@ -48,7 +48,7 @@ export default function Hero() {
 
                         <div className="w-full px-6 pt-6 overflow-hidden xl:px-24 lg:px-14 ">
                               <Marquee gradient={false} direction="left" speed={50}>
-                                    <div className="flex items-center ml-5 space-x-4 font-bold ">
+                                    <div className="flex items-center ml-5 space-x-4 font-bold font-hero-roboto">
                                           <img src={categorie} alt="Categorie" className="w-auto h-14" />
                                           <button className="w-auto px-4 py-2 bg-gray-200 border rounded-xl border-slate-100 h-14">Front-end Development</button>
                                           <button className="w-auto px-4 py-2 bg-gray-200 border rounded-xl border-slate-100 h-14">Back-end Development</button>
@@ -85,30 +85,30 @@ export default function Hero() {
                         <div className="relative flex flex-col mx-4 mt-0 xl:mx-24 lg:mx-16 min-w-fit sm:flex-row-reverse xl:items-center xl:justify-between ">
 
                               {/* Image container, first in mobile view */}
-                              <div className="relative flex justify-center w-full mb-0 xl:w-1/2 xl:mb-0 lg:left-36 xl:right-[10%] xl:mt-8 ">
+                              <div className="relative flex justify-center w-full mb-0 xl:w-1/2 xl:mb-0 lg:left-48 xl:left-[12%] xl:mt-8 2xl:left-[7%] ">
                                     <div className="w-full h-auto ">
                                           <img className="object-cover lg:w-[70%] w-full 2xl:w-[90%] xl:w-[80%] sm:w-[90%] " src={Gimg} alt="" />
                                           {/* DownArrow and plant images */}
-                                          <img className="absolute z-10 hidden object-cover h-auto top-64 left-8 xl:top-24 xl:-left-20 
-                                          lg:top-14 lg:-left-20 lg:block 2xl:block 2xl:top-52 2xl:w-[30%] w-40 xl:w-auto " src={DownArrow} alt="" />
+                                          <img className="absolute z-10 hidden object-cover h-auto top-64 left-8 xl:top-32 xl:-left-20 
+                                          lg:top-20 lg:-left-20 lg:block 2xl:block 2xl:top-52 2xl:w-[30%] w-40 xl:w-auto " src={DownArrow} alt="" />
                                           
-                                          <img className="absolute z-10 hidden object-cover h-auto lg:bottom-10 lg:w-20 lg:-left-36 xl:-left-48 xl:w-auto
-                                          xl:bottom-28 lg:block 2xl:block 2xl:bottom-52 2xl:w-[18%]  2xl:-left-52" src={plant} alt="" />
+                                          <img className="absolute z-10 hidden object-cover h-auto lg:bottom-24 lg:w-20 lg:-left-44 xl:-left-52 xl:w-auto
+                                          xl:bottom-32 lg:block 2xl:block 2xl:bottom-64 2xl:w-[18%]  2xl:-ml-[20%]" src={plant} alt="" />
                                           {/* UpArrow image, hidden on mobile */}
-                                          <img className="absolute xl:bottom-6 xl:-left-[24%]  lg:-left-[28%] h-auto  object-cover z-10 
-                                          hidden lg:block w-80 lg:w-64 xl:w-80 lg:-bottom-1  2xl:block 2xl:w-[40%] 2xl:bottom-[10%] 2xl:-left-[11%]" src={UpArrow} alt="" />
+                                          <img className="absolute xl:bottom-10 xl:-left-[28%]  lg:-left-[28%] h-auto  object-cover z-10 
+                                          hidden lg:block w-80 lg:w-64 xl:w-80 lg:bottom-5  2xl:block 2xl:w-[60%] 2xl:bottom-[6%] 2xl:-left-[33%]" src={UpArrow} alt="" />
                                     </div>
                               </div>
 
                               {/* Text content container */}
-                              <div className="w-full mt-0 xl:w-1/2 xl:-mt-32 xl:relative lg:mt-14 sm:mt-14 sm:mx-8 xl:mx-0 ">
-                                    <img src={wordImage} alt="Word Image" className="lg:w-[80%] w-full 2xl:w-[100%] xl:w-[100%]" />
-                                    <p className="xl:w-[100%] mt-5 text-xl font-semibold font-hero-font leading-normal text-gray-800 
-                                    hidden  xl:block  lg:leading-relaxed lg:text-xl xl:text-2xl  2xl:[150%] 2xl:text-4xl 2xl:leading-relaxed">
-                                          Education is not just about gaining knowledge, it’s<br />
+                              <div className="w-full px-4 mt-0 md:px-0 xl:w-1/2 xl:-mt-36 2xl:-mt-[10%] xl:relative lg:mt-14 sm:mt-14 sm:mx-8 xl:mx-0 lg:mx-0 lg:px-0 xl:px-0 ">
+                                    <img src={wordImage} alt="Word Image" className="lg:w-[80%] w-full 2xl:w-[100%] xl:w-[85%]" />
+                                    <p className="xl:w-[100%] mt-5 text-xl font-medium font-hero-poppins  leading-relaxed 
+                                    hidden  xl:block  lg:leading-relaxed lg:text-xl xl:text-xl  2xl:[150%] 2xl:text-4xl 2xl:leading-relaxed 2xl:mt-14">
+                                          Education is not just about gaining knowledge, it’s<br /> 
                                           about unlocking your potential.
                                     </p>
-                                    <p className="w-[110%] mt-5 text-lg font-semibold leading-normal text-gray-800 block md:hidden  xl:hidden font-hero-font">
+                                    <p className="w-[110%] mt-5 text-lg  leading-relaxed font-medium font-hero-poppins  block md:hidden  xl:hidden ">
                                           Education is not just about gaining knowledge, it’s 
                                           about unlocking your potential.
                                     </p>
@@ -116,15 +116,16 @@ export default function Hero() {
                               </div>
                               
                         </div>
-                        <div className="flex items-center w-full mt-5 lg:mt-10 xl:ml-20 xl:-mt-[8%]">
+                        <div className="flex items-center w-full mt-5 lg:ml-24 xl:ml-20 xl:-mt-[10%] lg:-mt-[8%] ml-5 sm:ml-14">
                                           <div className='flex w-2/3 '>
-                                                <div className='w-2/4 '><img className="order-1 md:w-[150%] xl:w-[80%] xl:h-[80%] md:h-[100%]  mr-2 lg:mr-4  lg:h-auto lg:order-1 sm:w-[100%] sm:h-[90%] " src={Enroll} alt="Enroll Now" /></div>
-                                                <div className='w-1/4 mb-8'><img className="order-3 mr-3 h-10  xl:h-16 xl:w-16 lg:order-2 2xl:h-[60%] 2xl:w-[60%] lg:h-10 lg:w-10 xl:-ml-[45%] xl:mt-3 " src={ytube} alt="YouTube Icon" /></div>
-                                                <div className='items-end w-1/4 text-nowrap'><a className="order-2 block h-10 mt-3 ml-4 font-bold underline w-28 xl:hidden " href="#">Watch Our Story</a></div>
+                                                <div className='w-2/4 '><img className="order-1 md:w-[150%] xl:w-[75%] xl:h-[85%] lg:w-[70%] lg:h-[80%] md:h-[100%]  mr-2 lg:mr-4   lg:order-1 sm:w-[100%] sm:h-[90%]  " src={Enroll} alt="Enroll Now" /></div>
+                                                <div className='w-1/4 mb-8'><img className="order-3 mr-3 h-10  xl:h-16 xl:w-16 lg:order-2 2xl:h-[60%] 2xl:w-[40%] lg:h-16 lg:w-16 lg:-ml-[50%] xl:-ml-[45%] xl:mt-1 " src={ytube} alt="YouTube Icon" /></div>
+                                                <div className='items-end w-1/4 text-nowrap'><a className="order-2 block h-10 mt-3 ml-4 font-bold underline w-28 xl:hidden lg:-ml-[95%]" href="#">Watch Our Story</a></div>
+                                                <div className='items-start w-1/4 -ml-32 xl:2xl:-ml-56 '>
+                                                <a className="hidden w-40 h-20 mt-8 font-bold underline xl:block xl:order-3 2xl:text-2xl xl:-ml-[115%] font-hero-poppins" href="#">Play Video</a>
                                           </div>
-                                          <div className='items-start w-1/3 -ml-32 xl:2xl:-ml-56 '>
-                                                <a className="hidden w-40 h-20 mt-5 font-bold underline xl:block xl:order-3 2xl:text-2xl " href="#">Play Video</a>
                                           </div>
+                                          
 
 
                                     </div>
@@ -135,8 +136,8 @@ export default function Hero() {
                               {/* Foreground Section */}
                               <div className="relative z-10 flex items-center justify-center mt-20 2xl:mt-0 left-6 lg:left-16 sm:mt-14 ">
                                     <img className="absolute w-10 h-10 bottom-[10%]  right-64 left-[24%] xl:left-[36%] lg:w-14 
-                                    sm:left-[31%] lg:h-auto 2xl:w-20 2xl:left-[35%] xl:-bottom-2 lg:left-[29%] lg:-bottom-2" src={fire} alt="Fire Icon" />
-                                    <h1 className="-mt-10 font-bold text-center sm:text-2xl lg:text-4xl 2xl:text-6xl 2xl:mt-0">Trending Course's</h1>
+                                    sm:left-[31%] lg:h-auto 2xl:w-20 2xl:left-[35%] xl:-bottom-2 lg:left-[32%] lg:-bottom-2" src={fire} alt="Fire Icon" />
+                                    <h1 className="-mt-10 font-bold text-center font-hero-poppins sm:text-2xl lg:text-4xl 2xl:text-6xl 2xl:mt-0">Trending Course's</h1>
                               </div>
 
                               {/* Slider with Background Image */}
@@ -253,17 +254,17 @@ export default function Hero() {
                               <div>
                                     <section id="course" className="section-course">
                                           <img
-                                                className="w-56 h-10 lg:h-20 lg:w-64"
+                                                className="w-56 h-10 lg:h-16 lg:w-60 xl:h-16 xl:w-60"
                                                 src={start}
                                                 alt="Start"
                                           />
-                                          <h3 className="block text-2xl w-[100%] font-bold course-paragraup lg:hidden">Our Expert Services for your Career Goals</h3>
-                                          <p className="block w-[100%] mt-6 font-semibold course-paragraup1 font-hero-font lg:hidden items-center justify-center ">
+                                          <h3 className="block text-2xl w-[100%] font-bold font-hero-poppins course-paragraup lg:hidden">Our Expert Services for your Career Goals</h3>
+                                          <p className="block w-[100%] mt-6 font-semibold course-paragraup1 font-hero-poppins lg:hidden items-center justify-center ">
                                                 Learn on a dynamic platform with high-quality content, live sessions & mentoring <br/>
                                                 from leading industry experts to achieve your desired goal.
                                           </p>
                                           <h3 className="hidden font-bold course-paragraup lg:block">Our Expert Services for your Career Goals</h3>
-                                          <p className="hidden mt-6 font-semibold course-paragraup1 font-hero-font lg:block xl:block 2xl:block 2xl:text-xl ">
+                                          <p className="hidden mt-6 font-semibold course-paragraup1 font-hero-poppins lg:block xl:block 2xl:block 2xl:text-xl ">
                                                 Learn on a dynamic platform with high-quality content, live sessions & mentoring
                                                 from leading industry experts to achieve your desired goal.
                                           </p>
@@ -280,28 +281,31 @@ export default function Hero() {
                   <div>
 
                         {/*--------------- About sections-------------- */}
-                        <div className="justify-center px-4 mx-auto -top-10 max-w-7xl">
-                              <h1 className="text-center text-[38px] text-black font-bold mb-2 font-poppins 2xl:text-6xl">About</h1>
-                              <p className=" text-center font-bold text-2xl text-black lg:text-lg text-[21px] justify-evenly 2xl:text-2xl mt-5 font-hero-font ">Join our community & Explore Thousands of Jobs, tips & Course</p>
+                        <div className="justify-center mx-auto -top-10 max-w-7xl">
+                              <h1 className="text-center text-[38px] text-black font-bold mb-2 font-hero-poppins 2xl:text-6xl">About</h1>
+                              <p className=" text-center font-bold text-2xl text-black lg:text-2xl text-[21px] justify-evenly 2xl:text-2xl mt-5 font-hero-poppins ">Join our community & Explore Thousands of Jobs, tips & Course</p>
 
                               <div className="container w-full About">
-                                    <div className="flex flex-col items-center justify-start gap-4 sm:flex-row sm:mb-5 lg:pl-40 2xl:pl-0">
+                                    <div className="flex flex-col items-center justify-start gap-4 sm:flex-row sm:mb-5 lg:pl-10 2xl:pl-0">
+                                          <div className='lg:w-2/3'>
                                           < a className='2xl:w-[150%]  ' href='https://www.instagram.com/gettograde.inc/'>
                                                 <img src={pic} alt='About' />
                                           </a>
-                                          <div className="flex flex-col gap-4 p-5 justify-evenly sm:p-0 sm:mt-5">
-                                                <h1 className="mb-2 text-2xl font-bold leading-tight tracking-wide text-black xl:4xl lg:text-2xl 2xl:text-6xl 2xl:w-[250%] 2xl:leading-normal ">Thousand Of Top Courses <br/> Now In One Place </h1>
-                                                <p className="block text-lg font-semibold text-black xl:text-2xl lg:text-xl lg:hidden sm:hidden">By connecting students all over the tamilnadu to 
+                                          </div>
+
+                                          <div className="flex flex-col lg:w-1/3 gap-4 justify-evenly sm:p-0 sm:mt-5 md:mt-0 xl:mt-0 lg:-ml-[8%] px-10 lg:px-0">
+                                                <h1 className="mb-2 text-2xl font-bold leading-tight tracking-wide font-hero-poppins text-black xl:4xl lg:text-2xl 2xl:text-6xl 2xl:w-[250%] 2xl:leading-normal ">Thousand Of Top Courses <br/> Now In One Place </h1>
+                                                <p className="block text-lg font-semibold text-black font-hero-poppins xl:text-2xl lg:text-xl lg:hidden sm:hidden">By connecting students all over the tamilnadu to 
                                                       the best instructors, we helping individuals reach their goals and pursue their dreams.</p>
-                                                      <p className="hidden text-lg font-semibold text-black xl:text-xl xl:block 2xl:hidden sm:block">By connecting students all over the tamilnadu to<br />
+                                                      <p className="hidden text-lg font-semibold text-black xl:text-xl xl:block 2xl:hidden font-hero-poppins lg:hidden sm:block">By connecting students all over the tamilnadu to
                                                       the best instructors, we helping individuals reach their goals and pursue their dreams.</p>
-                                                      <p className="hidden font-semibold text-black text-lg  lg:block xl:text-xl xl:hidden   2xl:block 2xl:text-2xl 2xl:w-[150%]">By connecting students all over the tamilnadu to
+                                                      <p className="hidden font-semibold text-black text-lg  lg:block xl:text-xl xl:hidden font-hero-poppins  2xl:block 2xl:text-2xl 2xl:w-[150%]">By connecting students all over the tamilnadu to
                                                       the best instructors, we helping individuals reach their goals and pursue their dreams.</p>
 
-                                                <ul>
-                                                      <li className="text-sm font-semibold text-black font-hero-font xl:text-lg 2xl:text-xl">• The Most World Class Instructors </li>
-                                                      <li className="text-sm font-semibold text-black xl:text-lg font-hero-font 2xl:text-xl">• Access Your Class anywhere </li>
-                                                      <li className="text-sm font-semibold text-black xl:text-lg font-hero-font 2xl:text-xl">• Flexible Course Plan & Life Time Career Support</li>
+                                                <ul className='ml-[8%] mt-5'>
+                                                      <li className="text-sm font-medium text-black font-hero-poppins xl:text-lg 2xl:text-xl">• The Most World Class Instructors </li>
+                                                      <li className="text-sm font-medium text-black xl:text-lg font-hero-poppins 2xl:text-xl">• Access Your Class anywhere </li>
+                                                      <li className="text-sm font-medium text-black xl:text-lg font-hero-poppins 2xl:text-xl">• Flexible Course Plan & Life Time Career Support</li>
                                                 </ul>
 
                                           </div>

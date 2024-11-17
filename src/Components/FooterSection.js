@@ -31,9 +31,9 @@ const FooterSection = () => {
         return () => clearInterval(timer)
     }, [])
     return (
-        <div className=''>
+        <div className='font-hero-poppins'>
 
-            <div className="lg:max-h-[550px] max-h-[900px] bg-blue-950 flex flex-col relative top-20 ">
+            <div className="lg:max-h-[550px] max-h-[900px] bg-blue-950 flex flex-col relative top-20 font-hero-poppins ">
                 <div className="container flex-grow px-4 py-8 mx-auto ">
                     <div className="relative overflow-hidden shadow-xl rounded-xl -top-20 bg-orange-50 ">
                         <div className="p-6 space-y-6">

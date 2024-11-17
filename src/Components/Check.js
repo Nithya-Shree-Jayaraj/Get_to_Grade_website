@@ -66,8 +66,8 @@ const testimonials = [
 ];
 export default function check() {
     return (
-        <section className=' max-h-[900px] '>
-        <div className="relative flex flex-col items-center w-full py-12 overflow-hidden  lg:top-4 top-0 lg:max-h-[900px] 2xl:max-h-[1200px] max-h-[800px] ">
+        <section className=' max-h-[900px] font-hero-poppins '>
+        <div className="relative flex flex-col items-center w-full py-12 overflow-hidden  lg:top-4 top-0 lg:max-h-[900px] 2xl:max-h-[1200px] max-h-[900px] ">
             {/* Heading Section */}
             <div
                 className="relative z-0 flex flex-col items-center justify-center w-full bg-no-repeat bg-contain"
@@ -81,7 +81,7 @@ export default function check() {
                             <img
                                 src={ellipse}
                                 alt={ellipse}
-                                className="absolute  w-20 h-20 xl:bottom-[38%] xl:left-[28%] lg:left-[12%] lg:bottom-[28%] bottom-[35%] left-[5%] 2xl:bottom-[43%] 2xl:left-[35%]"
+                                className="absolute  w-20 h-20 xl:bottom-[38%] xl:left-[28%] lg:left-[20%] lg:bottom-[33%] bottom-[35%] left-[5%] 2xl:bottom-[43%] 2xl:left-[35%]"
                             />
                 <div
                     className="text-center relative w-[60%]  xl:w-[40%] 2xl:w-[42%] lg:w-[50%] h-screen bg-no-repeat bg-contain xl:left-2 lg:left-10     left-0  flex justify-center items-center "
@@ -90,13 +90,13 @@ export default function check() {
                     <div class="px-4 py-16 mx-auto sm:max-w-xl lg:max-w-full  xl:max-w-full 2xl:max-w-full lg:mt-32 xl:mt-0 ">
                         <div class="relative max-w-2xl items-center">
                             <img
-                                className="relative -z-10 xl:bottom-32 xl:-left-4  xl:w-[100%] lg:bottom-44 lg:left-2  bottom-40 left-0 w-[100%] 2xl:bottom-80 "
+                                className="relative -z-10 xl:bottom-32 xl:-left-0  xl:w-[100%] lg:bottom-44 lg:-ml-[8%]  bottom-52 left-0 w-[100%] 2xl:bottom-80 "
                                 src={whole}
                                 alt="Our Student"
                             />
-                            <div className='xl:w-[160%] w-[180%] h-auto justify-center relative lg:right-56 xl:bottom-16 xl:right-48 right-24 bottom-32
+                            <div className='xl:w-[160%] w-[180%] h-auto justify-center relative lg:right-56 xl:bottom-16 xl:right-48 right-24 bottom-40
                               2xl:w-[180%] 2xl:bottom-64 2xl:right-72 sm:right-44'>
-                            <p class=" text-base text-gray-700 xl:text-xl  font-hero-font font-bold 2xl:text-2xl sm:text-lg ">
+                            <p class=" text-base  xl:text-xl  font-hero-poppins font-semibold 2xl:text-2xl sm:text-lg ">
                                 Here's what our students say about their transformative learning experience:
                                  Real stories, real growth. Discover firsthand the impact our courses have had in their lives.
                             </p>
@@ -118,7 +118,7 @@ export default function check() {
                     </div>
                 </div>
                 {/* Swiper Testimonials */}
-                <div className='relative 2xl:bottom-96 '><Swiper
+                <div className='relative -mt-16 md:-mt-0 lg:-mt-0 xl:-mt-0 2xl:bottom-96'><Swiper
                     modules={[Pagination, Autoplay]}
                     spaceBetween={30}
                     centeredSlides={true}
@@ -129,7 +129,7 @@ export default function check() {
                     pagination={{
                         clickable: true,
                     }}
-                    className="w-full max-w-2xl bottom-60 lg:bottom-44 xl:bottom-64 2xl:bottom-60"
+                    className="w-full max-w-2xl bottom-60 xl:bottom-64 2xl:bottom-60 "
                 >
                     {testimonials.map((testimonial, index) => (
                         <SwiperSlide key={index}>
@@ -168,8 +168,8 @@ export default function check() {
                                         <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                                     </svg>
                                 </div>
-                                <h3 className="mt-3 mb-4 text-lg font-semibold xl:text-3xl lg:text-2xl lg:mb-2 lg:-mt-1">{testimonial.name}</h3>
-                                <p className="mb-12 text-xl font-light text-black xl:text-2xl ">{testimonial.role}</p>
+                                <h3 className="mt-3 mb-4 font-semibold text-l xl:text-xl lg:text-lg lg:mb-2 lg:-mt-1">{testimonial.name}</h3>
+                                <p className="mb-12 font-light text-black text-md xl:text-lg ">{testimonial.role}</p>
                                 
                             </div>
                         </SwiperSlide>

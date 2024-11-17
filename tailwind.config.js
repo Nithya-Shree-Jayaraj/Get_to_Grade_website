@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily :{
-      'hero-font' : 'Quicksand'
+      'hero-font' : 'Quicksand',
+      'hero-poppins' : 'Poppins',
+      'hero-roboto' : 'Roboto',
+      'hero-outfit' : 'Outfit'
     },
     screens: {
       'sm': '640px',
