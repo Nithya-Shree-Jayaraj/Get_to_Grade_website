@@ -85,7 +85,7 @@ export default function Hero() {
                         <div className="relative flex flex-col mx-4 mt-0 xl:mx-24 lg:mx-16 min-w-fit sm:flex-row-reverse xl:items-center xl:justify-between ">
 
                               {/* Image container, first in mobile view */}
-                              <div className="relative flex justify-center w-full mb-0 xl:w-1/2 xl:mb-0 lg:left-48 xl:left-[12%] xl:mt-8 2xl:left-[7%] ">
+                              <div className="relative flex justify-center w-full mb-0 xl:w-1/2 xl:mb-0 lg:left-48 xl:left-[12%] xl:mt-8 2xl:left-[7 %] ">
                                     <div className="w-full h-auto ">
                                           <img className="object-cover lg:w-[70%] w-full 2xl:w-[90%] xl:w-[80%] sm:w-[90%] " src={Gimg} alt="" />
                                           {/* DownArrow and plant images */}
@@ -116,11 +116,11 @@ export default function Hero() {
                               </div>
                               
                         </div>
-                        <div className="flex items-center w-full mt-5 lg:ml-24 xl:ml-20 xl:-mt-[10%] lg:-mt-[8%] ml-5 sm:ml-14">
+                        <div className="flex items-center w-full mt-5 lg:ml-24 xl:ml-20 xl:-mt-[10%] lg:-mt-[8%] ml-7 sm:ml-14 sm:-mt-6">
                                           <div className='flex w-2/3 '>
                                                 <div className='w-2/4 '><img className="order-1 md:w-[150%] xl:w-[75%] xl:h-[85%] lg:w-[70%] lg:h-[80%] md:h-[100%]  mr-2 lg:mr-4   lg:order-1 sm:w-[100%] sm:h-[90%]  " src={Enroll} alt="Enroll Now" /></div>
-                                                <div className='w-1/4 mb-8'><img className="order-3 mr-3 h-10  xl:h-16 xl:w-16 lg:order-2 2xl:h-[60%] 2xl:w-[40%] lg:h-16 lg:w-16 lg:-ml-[50%] xl:-ml-[45%] xl:mt-1 " src={ytube} alt="YouTube Icon" /></div>
-                                                <div className='items-end w-1/4 text-nowrap'><a className="order-2 block h-10 mt-3 ml-4 font-bold underline w-28 xl:hidden lg:-ml-[95%]" href="#">Watch Our Story</a></div>
+                                                <div className='w-1/4 mb-8'><img className="order-3 mr-3 h-10 ml-2 mb-2 sm:h-16  xl:h-16 xl:w-16 lg:order-2 2xl:h-[60%] 2xl:w-[40%] lg:h-16 lg:w-16 lg:-ml-[50%] xl:-ml-[45%] xl:mt-1 " src={ytube} alt="YouTube Icon" /></div>
+                                                <div className='items-end w-1/4 text-nowrap'><a className="order-2 block h-10 mt-1.5 ml-1 sm:mt-4 font-bold underline w-28 xl:hidden lg:-ml-[95%]" href="#">Watch Our Story</a></div>
                                                 <div className='items-start w-1/4 -ml-32 xl:2xl:-ml-56 '>
                                                 <a className="hidden w-40 h-20 mt-8 font-bold underline xl:block xl:order-3 2xl:text-2xl xl:-ml-[115%] font-hero-poppins" href="#">Play Video</a>
                                           </div>
@@ -135,7 +135,7 @@ export default function Hero() {
                         <div className="relative">
                               {/* Foreground Section */}
                               <div className="relative z-10 flex items-center justify-center mt-20 2xl:mt-0 left-6 lg:left-16 sm:mt-14 ">
-                                    <img className="absolute w-10 h-10 bottom-[10%]  right-64 left-[24%] xl:left-[36%] lg:w-14 
+                                    <img className="absolute w-10 h-10 bottom-[10%]  right-64 left-[21%] xl:left-[36%] lg:w-14 
                                     sm:left-[31%] lg:h-auto 2xl:w-20 2xl:left-[35%] xl:-bottom-2 lg:left-[32%] lg:-bottom-2" src={fire} alt="Fire Icon" />
                                     <h1 className="-mt-10 font-bold text-center font-hero-poppins sm:text-2xl lg:text-4xl 2xl:text-6xl 2xl:mt-0">Trending Course's</h1>
                               </div>
@@ -247,7 +247,7 @@ export default function Hero() {
                                     <img className="absolute xl:h-[6%] xl:ml-80 xl:-top-9 lg:h-[6%] lg:-top-5 lg:ml-56 " src={Start_arrow} alt="Start_arrow" />
 
                               </div>
-                              <div className='block lg:hidden'>
+                              <div className='block sm:hidden lg:hidden'>
                                     <img className="absolute h-[6%] left-[75%] -top-3" src={Start_arrow} alt="Start_arrow" />
 
                               </div>
@@ -287,13 +287,13 @@ export default function Hero() {
 
                               <div className="container w-full About">
                                     <div className="flex flex-col items-center justify-start gap-4 sm:flex-row sm:mb-5 lg:pl-10 2xl:pl-0">
-                                          <div className='lg:w-2/3'>
+                                          <div className='lg:w-2/3 sm:h-[160%] sm:w-[170%]'>
                                           < a className='2xl:w-[150%]  ' href='https://www.instagram.com/gettograde.inc/'>
                                                 <img src={pic} alt='About' />
                                           </a>
                                           </div>
 
-                                          <div className="flex flex-col lg:w-1/3 gap-4 justify-evenly sm:p-0 sm:mt-5 md:mt-0 xl:mt-0 lg:-ml-[8%] px-10 lg:px-0">
+                                          <div className="flex flex-col lg:w-1/3 gap-4 justify-evenly sm:p-0 sm:mt-10 md:mt-10 xl:mt-0 lg:-ml-[8%] px-10 lg:px-0">
                                                 <h1 className="mb-2 text-2xl font-bold leading-tight tracking-wide font-hero-poppins text-black xl:4xl lg:text-2xl 2xl:text-6xl 2xl:w-[250%] 2xl:leading-normal ">Thousand Of Top Courses <br/> Now In One Place </h1>
                                                 <p className="block text-lg font-semibold text-black font-hero-poppins xl:text-2xl lg:text-xl lg:hidden sm:hidden">By connecting students all over the tamilnadu to 
                                                       the best instructors, we helping individuals reach their goals and pursue their dreams.</p>
@@ -312,7 +312,7 @@ export default function Hero() {
                                     </div>
                               </div>
                         </div>
-                        < footer />
+                        
                   </div>
 
                   <Instructors />

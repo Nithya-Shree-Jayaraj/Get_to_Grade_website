@@ -53,7 +53,7 @@ const FooterSection = () => {
                                         <h1 className="text-2xl font-bold lg:text-2xl">Base way Meetup</h1>
                                     </div>
                                 </div>
-                                <div className="flex mr-4 space-x-2 ">
+                                <div className="flex mr-1 space-x-2 lg:mr-4 ">
                                     {Object.entries(timeLeft).map(([unit, value]) => (
                                         <div key={unit} className="bg-[#1a237e] text-white  rounded-xl text-center w-20 justify-center items-center p-6 space-y-4 ">
                                             <div className="text-xl font-bold">{value.toString().padStart(2, '0')}</div>
@@ -95,7 +95,7 @@ const FooterSection = () => {
                                         <h3 className="relative mb-2 text-lg font-bold underline top-5 xl:top-0 lg:top-0 xl:text-xl lg:text-xl decoration-red-400">Need Any Help ?</h3>
 
 
-                                        <p className="relative flex-col space-x-6 top-5 lg:flex-col lg:space-x-8">
+                                        <p className="relative flex-col space-x-4 top-5 lg:flex-col lg:space-x-8">
                                             <a href="mailto:gettograde.in@gmail.com" className="text-sm font-bold text-black underline lg:text-lg xl:text-xl">gettograde@gmail.com</a>
                                             <a href="tel:+917708446450" className="relative text-sm font-bold text-black underline lg:top-0 lg:text-lg xl:text-xl lg:text-justify text-nowrap">+91 77084 46450</a>
                                         </p>

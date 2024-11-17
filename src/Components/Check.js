@@ -76,12 +76,12 @@ export default function check() {
                 <img
                                 src={ellipse}
                                 alt={ellipse}
-                                className="w-20 h-20 absolute  xl:bottom-[56%] xl:right-[32%] lg:bottom-[50%] lg:right-[22%] bottom-[55%] right-[20%] 2xl:bottom-[55%]  2xl:right-[38%] "
+                                className="w-20 h-20 absolute  xl:bottom-[56%] xl:right-[32%] lg:bottom-[50%] lg:right-[22%] bottom-[59%] right-[20%] sm:bottom-[64%] sm:right-[34%] 2xl:bottom-[55%]  2xl:right-[38%] "
                             />
                             <img
                                 src={ellipse}
                                 alt={ellipse}
-                                className="absolute  w-20 h-20 xl:bottom-[38%] xl:left-[28%] lg:left-[20%] lg:bottom-[33%] bottom-[35%] left-[5%] 2xl:bottom-[43%] 2xl:left-[35%]"
+                                className="absolute  w-20 h-20 xl:bottom-[38%] xl:left-[28%] lg:left-[20%] lg:bottom-[33%] bottom-[39%] left-[5%] sm:bottom-[42%] sm:left-[26%] 2xl:bottom-[43%] 2xl:left-[35%]"
                             />
                 <div
                     className="text-center relative w-[60%]  xl:w-[40%] 2xl:w-[42%] lg:w-[50%] h-screen bg-no-repeat bg-contain xl:left-2 lg:left-10     left-0  flex justify-center items-center "
@@ -94,9 +94,9 @@ export default function check() {
                                 src={whole}
                                 alt="Our Student"
                             />
-                            <div className='xl:w-[160%] w-[180%] h-auto justify-center relative lg:right-56 xl:bottom-16 xl:right-48 right-24 bottom-40
-                              2xl:w-[180%] 2xl:bottom-64 2xl:right-72 sm:right-44'>
-                            <p class=" text-base  xl:text-xl  font-hero-poppins font-semibold 2xl:text-2xl sm:text-lg ">
+                            <div className='xl:w-[160%] w-[180%] h-auto justify-center relative lg:right-56 xl:bottom-16 xl:right-48 right-20 bottom-40
+                              2xl:w-[180%] 2xl:bottom-64 2xl:right-72 sm:right-44 sm:px-20 lg:px-0'>
+                            <p class=" text-base  xl:text-xl  font-hero-poppins font-semibold 2xl:text-2xl sm:text-lg  ">
                                 Here's what our students say about their transformative learning experience:
                                  Real stories, real growth. Discover firsthand the impact our courses have had in their lives.
                             </p>
