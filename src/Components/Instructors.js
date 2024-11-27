@@ -207,13 +207,13 @@ const Instructors = () => {
                   {/* Custom Navigation Buttons */}
                   <button
                     ref={prevRef}
-                    className="absolute z-10 p-1 text-white transform -translate-y-1/2 bg-black rounded-full swiper-button-prev -left-10 top-1/2 "
+                    className="absolute z-10 p-1 text-white transform -translate-y-1/2 bg-black rounded-xl swiper-button-prev -left-10 top-1/2 "
                   >
                     &larr;
                   </button>
                   <button
                     ref={nextRef}
-                    className="absolute z-10 p-1 text-white transform -translate-y-1/2 bg-black rounded-full swiper-button-next -right-10 top-1/2"
+                    className="absolute z-10 p-1 text-white transform -translate-y-1/2 bg-black rounded-xl swiper-button-next -right-10 top-1/2"
                   >
                     &rarr;
                   </button>

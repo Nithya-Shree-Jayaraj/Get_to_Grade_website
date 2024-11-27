@@ -67,7 +67,7 @@ const testimonials = [
 export default function check() {
     return (
         <section className=' max-h-[900px] font-hero-poppins '>
-        <div className="relative flex flex-col items-center w-full py-12 overflow-hidden  lg:top-4 top-0 lg:max-h-[900px] 2xl:max-h-[1200px] max-h-[900px] ">
+        <div className="relative flex flex-col items-center w-full py-12 overflow-hidden  lg:top-4 top-0 lg:max-h-[1000px] 2xl:max-h-[1500px] max-h-[900px] ">
             {/* Heading Section */}
             <div
                 className="relative z-0 flex flex-col items-center justify-center w-full bg-no-repeat bg-contain"
@@ -102,14 +102,7 @@ export default function check() {
                             </p>
 
                             </div>
-                             {/* <img
-                                src={roll}
-                                alt={roll}
-                                className="absolute z-20 h-auto -bottom-24 w-52 -right-[35%] hidden xl:block   2xl:-bottom-10 2xl:h-80 2xl:-right-[40%]
-                                 2xl:hidden"
-                            /> */}
-                            
-                            <img
+                        <img
                                 src={dot}
                                 alt={dot}
                                 className="absolute z-20 w-20 h-20 xl:bottom-0 xl:-right-10 -right-14 bottom-16 2xl:bottom-40 2xl:right-10 2xl:w-28 2xl:h-28"

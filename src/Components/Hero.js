@@ -96,7 +96,7 @@ export default function Hero() {
                                           xl:bottom-32 lg:block 2xl:block 2xl:bottom-64 2xl:w-[18%]  2xl:-ml-[20%]" src={plant} alt="" />
                                           {/* UpArrow image, hidden on mobile */}
                                           <img className="absolute xl:bottom-10 xl:-left-[28%]  lg:-left-[28%] h-auto  object-cover z-10 
-                                          hidden lg:block w-80 lg:w-64 xl:w-80 lg:bottom-5  2xl:block 2xl:w-[60%] 2xl:bottom-[6%] 2xl:-left-[33%]" src={UpArrow} alt="" />
+                                          hidden lg:block w-80 lg:w-64 xl:w-80 lg:bottom-5  2xl:block 2xl:w-[60%] 2xl:bottom-[6%] 2xl:-left-[20%]" src={UpArrow} alt="" />
                                     </div>
                               </div>
 
